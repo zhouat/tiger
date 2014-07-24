@@ -1,0 +1,3350 @@
+Testing the lexer. All tokens:
+c is 99  c
+TOKEN_CLASS: <NONE> : at line 1
+c is 66  B
+TOKEN_ID: BinaryTree : at line 1
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 1
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 2
+c is 115  s
+TOKEN_STATIC: <NONE> : at line 2
+c is 118  v
+TOKEN_VOID: <NONE> : at line 2
+c is 109  m
+TOKEN_MAIN: <NONE> : at line 2
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 2
+c is 83  S
+TOKEN_STRING: <NONE> : at line 2
+c is 91  [
+TOKEN_ARR: <NONE> : at line 2
+c is 97  a
+TOKEN_ID: a : at line 2
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 2
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 2
+c is 83  S
+TOKEN_SYSTEM: <NONE> : at line 3
+c is 46  .
+TOKEN_DOT: <NONE> : at line 3
+c is 111  o
+TOKEN_OUT: <NONE> : at line 3
+c is 46  .
+TOKEN_DOT: <NONE> : at line 3
+c is 112  p
+TOKEN_PRINTLN: <NONE> : at line 3
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 3
+c is 110  n
+TOKEN_NEW: <NONE> : at line 3
+c is 66  B
+TOKEN_ID: BT : at line 3
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 3
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 3
+c is 46  .
+TOKEN_DOT: <NONE> : at line 3
+c is 83  S
+TOKEN_ID: Start : at line 3
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 3
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 3
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 3
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 3
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 4
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 5
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 8
+c is 84  T
+TOKEN_ID: This : at line 8
+c is 99  c
+TOKEN_CLASS: <NONE> : at line 8
+c is 105  i
+TOKEN_ID: invokes : at line 8
+c is 116  t
+TOKEN_ID: the : at line 8
+c is 109  m
+TOKEN_ID: methods : at line 8
+c is 116  t
+TOKEN_ID: to : at line 8
+c is 99  c
+TOKEN_ID: create : at line 8
+c is 97  a
+TOKEN_ID: a : at line 8
+c is 116  t
+TOKEN_ID: tree : at line 8
+c is 44  ,
+TOKEN_COMMER: <NONE> : at line 8
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 9
+c is 105  i
+TOKEN_ID: insert : at line 9
+c is 44  ,
+TOKEN_COMMER: <NONE> : at line 9
+c is 100  d
+TOKEN_ID: delete : at line 9
+c is 97  a
+TOKEN_ID: and : at line 9
+c is 115  s
+TOKEN_ID: serach : at line 9
+c is 102  f
+TOKEN_FOR: <NONE> : at line 9
+c is 101  e
+TOKEN_ID: elements : at line 9
+c is 111  o
+TOKEN_ID: on : at line 9
+c is 105  i
+TOKEN_ID: it : at line 9
+c is 99  c
+TOKEN_CLASS: <NONE> : at line 10
+c is 66  B
+TOKEN_ID: BT : at line 10
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 10
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 12
+c is 105  i
+TOKEN_INT: <NONE> : at line 12
+c is 83  S
+TOKEN_ID: Start : at line 12
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 12
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 12
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 12
+c is 84  T
+TOKEN_ID: Tree : at line 13
+c is 114  r
+TOKEN_ID: root : at line 13
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 13
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 14
+c is 110  n
+TOKEN_ID: ntb : at line 14
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 14
+c is 105  i
+TOKEN_INT: <NONE> : at line 15
+c is 110  n
+TOKEN_ID: nti : at line 15
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 15
+c is 114  r
+TOKEN_ID: root : at line 17
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 17
+c is 110  n
+TOKEN_NEW: <NONE> : at line 17
+c is 84  T
+TOKEN_ID: Tree : at line 17
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 17
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 17
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 17
+c is 110  n
+TOKEN_ID: ntb : at line 18
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 18
+c is 114  r
+TOKEN_ID: root : at line 18
+c is 46  .
+TOKEN_DOT: <NONE> : at line 18
+c is 73  I
+TOKEN_ID: Init : at line 18
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 18
+c is 49  1
+TOKEN_NUM: 16 : at line 18
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 18
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 18
+c is 110  n
+TOKEN_ID: ntb : at line 19
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 19
+c is 114  r
+TOKEN_ID: root : at line 19
+c is 46  .
+TOKEN_DOT: <NONE> : at line 19
+c is 80  P
+TOKEN_ID: Print : at line 19
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 19
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 19
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 19
+c is 83  S
+TOKEN_SYSTEM: <NONE> : at line 20
+c is 46  .
+TOKEN_DOT: <NONE> : at line 20
+c is 111  o
+TOKEN_OUT: <NONE> : at line 20
+c is 46  .
+TOKEN_DOT: <NONE> : at line 20
+c is 112  p
+TOKEN_PRINTLN: <NONE> : at line 20
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 20
+c is 49  1
+TOKEN_NUM: 100000000 : at line 20
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 20
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 20
+c is 110  n
+TOKEN_ID: ntb : at line 21
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 21
+c is 114  r
+TOKEN_ID: root : at line 21
+c is 46  .
+TOKEN_DOT: <NONE> : at line 21
+c is 73  I
+TOKEN_ID: Insert : at line 21
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 21
+c is 56  8
+TOKEN_NUM: 8 : at line 21
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 21
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 21
+c is 110  n
+TOKEN_ID: ntb : at line 22
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 22
+c is 114  r
+TOKEN_ID: root : at line 22
+c is 46  .
+TOKEN_DOT: <NONE> : at line 22
+c is 80  P
+TOKEN_ID: Print : at line 22
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 22
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 22
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 22
+c is 110  n
+TOKEN_ID: ntb : at line 23
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 23
+c is 114  r
+TOKEN_ID: root : at line 23
+c is 46  .
+TOKEN_DOT: <NONE> : at line 23
+c is 73  I
+TOKEN_ID: Insert : at line 23
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 23
+c is 50  2
+TOKEN_NUM: 24 : at line 23
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 23
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 23
+c is 110  n
+TOKEN_ID: ntb : at line 24
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 24
+c is 114  r
+TOKEN_ID: root : at line 24
+c is 46  .
+TOKEN_DOT: <NONE> : at line 24
+c is 73  I
+TOKEN_ID: Insert : at line 24
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 24
+c is 52  4
+TOKEN_NUM: 4 : at line 24
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 24
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 24
+c is 110  n
+TOKEN_ID: ntb : at line 25
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 25
+c is 114  r
+TOKEN_ID: root : at line 25
+c is 46  .
+TOKEN_DOT: <NONE> : at line 25
+c is 73  I
+TOKEN_ID: Insert : at line 25
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 25
+c is 49  1
+TOKEN_NUM: 12 : at line 25
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 25
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 25
+c is 110  n
+TOKEN_ID: ntb : at line 26
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 26
+c is 114  r
+TOKEN_ID: root : at line 26
+c is 46  .
+TOKEN_DOT: <NONE> : at line 26
+c is 73  I
+TOKEN_ID: Insert : at line 26
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 26
+c is 50  2
+TOKEN_NUM: 20 : at line 26
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 26
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 26
+c is 110  n
+TOKEN_ID: ntb : at line 27
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 27
+c is 114  r
+TOKEN_ID: root : at line 27
+c is 46  .
+TOKEN_DOT: <NONE> : at line 27
+c is 73  I
+TOKEN_ID: Insert : at line 27
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 27
+c is 50  2
+TOKEN_NUM: 28 : at line 27
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 27
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 27
+c is 110  n
+TOKEN_ID: ntb : at line 28
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 28
+c is 114  r
+TOKEN_ID: root : at line 28
+c is 46  .
+TOKEN_DOT: <NONE> : at line 28
+c is 73  I
+TOKEN_ID: Insert : at line 28
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 28
+c is 49  1
+TOKEN_NUM: 14 : at line 28
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 28
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 28
+c is 110  n
+TOKEN_ID: ntb : at line 29
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 29
+c is 114  r
+TOKEN_ID: root : at line 29
+c is 46  .
+TOKEN_DOT: <NONE> : at line 29
+c is 80  P
+TOKEN_ID: Print : at line 29
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 29
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 29
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 29
+c is 83  S
+TOKEN_SYSTEM: <NONE> : at line 30
+c is 46  .
+TOKEN_DOT: <NONE> : at line 30
+c is 111  o
+TOKEN_OUT: <NONE> : at line 30
+c is 46  .
+TOKEN_DOT: <NONE> : at line 30
+c is 112  p
+TOKEN_PRINTLN: <NONE> : at line 30
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 30
+c is 114  r
+TOKEN_ID: root : at line 30
+c is 46  .
+TOKEN_DOT: <NONE> : at line 30
+c is 83  S
+TOKEN_ID: Search : at line 30
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 30
+c is 50  2
+TOKEN_NUM: 24 : at line 30
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 30
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 30
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 30
+c is 83  S
+TOKEN_SYSTEM: <NONE> : at line 31
+c is 46  .
+TOKEN_DOT: <NONE> : at line 31
+c is 111  o
+TOKEN_OUT: <NONE> : at line 31
+c is 46  .
+TOKEN_DOT: <NONE> : at line 31
+c is 112  p
+TOKEN_PRINTLN: <NONE> : at line 31
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 31
+c is 114  r
+TOKEN_ID: root : at line 31
+c is 46  .
+TOKEN_DOT: <NONE> : at line 31
+c is 83  S
+TOKEN_ID: Search : at line 31
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 31
+c is 49  1
+TOKEN_NUM: 12 : at line 31
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 31
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 31
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 31
+c is 83  S
+TOKEN_SYSTEM: <NONE> : at line 32
+c is 46  .
+TOKEN_DOT: <NONE> : at line 32
+c is 111  o
+TOKEN_OUT: <NONE> : at line 32
+c is 46  .
+TOKEN_DOT: <NONE> : at line 32
+c is 112  p
+TOKEN_PRINTLN: <NONE> : at line 32
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 32
+c is 114  r
+TOKEN_ID: root : at line 32
+c is 46  .
+TOKEN_DOT: <NONE> : at line 32
+c is 83  S
+TOKEN_ID: Search : at line 32
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 32
+c is 49  1
+TOKEN_NUM: 16 : at line 32
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 32
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 32
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 32
+c is 83  S
+TOKEN_SYSTEM: <NONE> : at line 33
+c is 46  .
+TOKEN_DOT: <NONE> : at line 33
+c is 111  o
+TOKEN_OUT: <NONE> : at line 33
+c is 46  .
+TOKEN_DOT: <NONE> : at line 33
+c is 112  p
+TOKEN_PRINTLN: <NONE> : at line 33
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 33
+c is 114  r
+TOKEN_ID: root : at line 33
+c is 46  .
+TOKEN_DOT: <NONE> : at line 33
+c is 83  S
+TOKEN_ID: Search : at line 33
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 33
+c is 53  5
+TOKEN_NUM: 50 : at line 33
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 33
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 33
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 33
+c is 83  S
+TOKEN_SYSTEM: <NONE> : at line 34
+c is 46  .
+TOKEN_DOT: <NONE> : at line 34
+c is 111  o
+TOKEN_OUT: <NONE> : at line 34
+c is 46  .
+TOKEN_DOT: <NONE> : at line 34
+c is 112  p
+TOKEN_PRINTLN: <NONE> : at line 34
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 34
+c is 114  r
+TOKEN_ID: root : at line 34
+c is 46  .
+TOKEN_DOT: <NONE> : at line 34
+c is 83  S
+TOKEN_ID: Search : at line 34
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 34
+c is 49  1
+TOKEN_NUM: 12 : at line 34
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 34
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 34
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 34
+c is 110  n
+TOKEN_ID: ntb : at line 35
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 35
+c is 114  r
+TOKEN_ID: root : at line 35
+c is 46  .
+TOKEN_DOT: <NONE> : at line 35
+c is 68  D
+TOKEN_ID: Delete : at line 35
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 35
+c is 49  1
+TOKEN_NUM: 12 : at line 35
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 35
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 35
+c is 110  n
+TOKEN_ID: ntb : at line 36
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 36
+c is 114  r
+TOKEN_ID: root : at line 36
+c is 46  .
+TOKEN_DOT: <NONE> : at line 36
+c is 80  P
+TOKEN_ID: Print : at line 36
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 36
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 36
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 36
+c is 83  S
+TOKEN_SYSTEM: <NONE> : at line 37
+c is 46  .
+TOKEN_DOT: <NONE> : at line 37
+c is 111  o
+TOKEN_OUT: <NONE> : at line 37
+c is 46  .
+TOKEN_DOT: <NONE> : at line 37
+c is 112  p
+TOKEN_PRINTLN: <NONE> : at line 37
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 37
+c is 114  r
+TOKEN_ID: root : at line 37
+c is 46  .
+TOKEN_DOT: <NONE> : at line 37
+c is 83  S
+TOKEN_ID: Search : at line 37
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 37
+c is 49  1
+TOKEN_NUM: 12 : at line 37
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 37
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 37
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 37
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 39
+c is 48  0
+TOKEN_NUM: 0 : at line 39
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 39
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 40
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 42
+c is 99  c
+TOKEN_CLASS: <NONE> : at line 44
+c is 84  T
+TOKEN_ID: Tree : at line 44
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 44
+c is 84  T
+TOKEN_ID: Tree : at line 45
+c is 108  l
+TOKEN_ID: left : at line 45
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 45
+c is 84  T
+TOKEN_ID: Tree : at line 46
+c is 114  r
+TOKEN_ID: right : at line 46
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 46
+c is 105  i
+TOKEN_INT: <NONE> : at line 47
+c is 107  k
+TOKEN_ID: key : at line 47
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 47
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 48
+c is 104  h
+TOKEN_ID: has_left : at line 48
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 48
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 49
+c is 104  h
+TOKEN_ID: has_right : at line 49
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 49
+c is 84  T
+TOKEN_ID: Tree : at line 50
+c is 109  m
+TOKEN_ID: my_null : at line 50
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 50
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 52
+c is 73  I
+TOKEN_ID: Initialize : at line 52
+c is 97  a
+TOKEN_ID: a : at line 52
+c is 110  n
+TOKEN_ID: node : at line 52
+c is 119  w
+TOKEN_ID: with : at line 52
+c is 97  a
+TOKEN_ID: a : at line 52
+c is 107  k
+TOKEN_ID: key : at line 52
+c is 118  v
+TOKEN_ID: value : at line 52
+c is 97  a
+TOKEN_ID: and : at line 52
+c is 110  n
+TOKEN_ID: no : at line 52
+c is 99  c
+TOKEN_ID: children : at line 52
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 53
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 53
+c is 73  I
+TOKEN_ID: Init : at line 53
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 53
+c is 105  i
+TOKEN_INT: <NONE> : at line 53
+c is 118  v
+TOKEN_ID: v_key : at line 53
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 53
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 53
+c is 107  k
+TOKEN_ID: key : at line 54
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 54
+c is 118  v
+TOKEN_ID: v_key : at line 54
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 54
+c is 104  h
+TOKEN_ID: has_left : at line 55
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 55
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 55
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 55
+c is 104  h
+TOKEN_ID: has_right : at line 56
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 56
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 56
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 56
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 57
+c is 116  t
+TOKEN_ID: true : at line 57
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 57
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 58
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 60
+c is 85  U
+TOKEN_ID: Update : at line 60
+c is 116  t
+TOKEN_ID: the : at line 60
+c is 114  r
+TOKEN_ID: right : at line 60
+c is 99  c
+TOKEN_ID: child : at line 60
+c is 119  w
+TOKEN_ID: with : at line 60
+c is 114  r
+TOKEN_ID: rn : at line 60
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 61
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 61
+c is 83  S
+TOKEN_ID: SetRight : at line 61
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 61
+c is 84  T
+TOKEN_ID: Tree : at line 61
+c is 114  r
+TOKEN_ID: rn : at line 61
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 61
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 61
+c is 114  r
+TOKEN_ID: right : at line 62
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 62
+c is 114  r
+TOKEN_ID: rn : at line 62
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 62
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 63
+c is 116  t
+TOKEN_ID: true : at line 63
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 63
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 64
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 66
+c is 85  U
+TOKEN_ID: Update : at line 66
+c is 116  t
+TOKEN_ID: the : at line 66
+c is 108  l
+TOKEN_ID: left : at line 66
+c is 99  c
+TOKEN_ID: child : at line 66
+c is 119  w
+TOKEN_ID: with : at line 66
+c is 108  l
+TOKEN_ID: ln : at line 66
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 67
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 67
+c is 83  S
+TOKEN_ID: SetLeft : at line 67
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 67
+c is 84  T
+TOKEN_ID: Tree : at line 67
+c is 108  l
+TOKEN_ID: ln : at line 67
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 67
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 67
+c is 108  l
+TOKEN_ID: left : at line 68
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 68
+c is 108  l
+TOKEN_ID: ln : at line 68
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 68
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 69
+c is 116  t
+TOKEN_ID: true : at line 69
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 69
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 70
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 72
+c is 84  T
+TOKEN_ID: Tree : at line 72
+c is 71  G
+TOKEN_ID: GetRight : at line 72
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 72
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 72
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 72
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 73
+c is 114  r
+TOKEN_ID: right : at line 73
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 73
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 74
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 76
+c is 84  T
+TOKEN_ID: Tree : at line 76
+c is 71  G
+TOKEN_ID: GetLeft : at line 76
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 76
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 76
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 76
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 77
+c is 108  l
+TOKEN_ID: left : at line 77
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 77
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 78
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 80
+c is 105  i
+TOKEN_INT: <NONE> : at line 80
+c is 71  G
+TOKEN_ID: GetKey : at line 80
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 80
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 80
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 80
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 81
+c is 107  k
+TOKEN_ID: key : at line 81
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 81
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 82
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 84
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 84
+c is 83  S
+TOKEN_ID: SetKey : at line 84
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 84
+c is 105  i
+TOKEN_INT: <NONE> : at line 84
+c is 118  v
+TOKEN_ID: v_key : at line 84
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 84
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 84
+c is 107  k
+TOKEN_ID: key : at line 85
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 85
+c is 118  v
+TOKEN_ID: v_key : at line 85
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 85
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 86
+c is 116  t
+TOKEN_ID: true : at line 86
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 86
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 87
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 89
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 89
+c is 71  G
+TOKEN_ID: GetHas_Right : at line 89
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 89
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 89
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 89
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 90
+c is 104  h
+TOKEN_ID: has_right : at line 90
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 90
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 91
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 93
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 93
+c is 71  G
+TOKEN_ID: GetHas_Left : at line 93
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 93
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 93
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 93
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 94
+c is 104  h
+TOKEN_ID: has_left : at line 94
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 94
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 95
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 97
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 97
+c is 83  S
+TOKEN_ID: SetHas_Left : at line 97
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 97
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 97
+c is 118  v
+TOKEN_ID: val : at line 97
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 97
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 97
+c is 104  h
+TOKEN_ID: has_left : at line 98
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 98
+c is 118  v
+TOKEN_ID: val : at line 98
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 98
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 99
+c is 116  t
+TOKEN_ID: true : at line 99
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 99
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 100
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 102
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 102
+c is 83  S
+TOKEN_ID: SetHas_Right : at line 102
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 102
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 102
+c is 118  v
+TOKEN_ID: val : at line 102
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 102
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 102
+c is 104  h
+TOKEN_ID: has_right : at line 103
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 103
+c is 118  v
+TOKEN_ID: val : at line 103
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 103
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 104
+c is 116  t
+TOKEN_ID: true : at line 104
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 104
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 105
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 107
+c is 84  T
+TOKEN_ID: This : at line 107
+c is 109  m
+TOKEN_ID: method : at line 107
+c is 99  c
+TOKEN_ID: compares : at line 107
+c is 116  t
+TOKEN_ID: two : at line 107
+c is 105  i
+TOKEN_ID: integers : at line 107
+c is 97  a
+TOKEN_ID: and : at line 107
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 108
+c is 114  r
+TOKEN_ID: returns : at line 108
+c is 116  t
+TOKEN_ID: true : at line 108
+c is 105  i
+TOKEN_IF: <NONE> : at line 108
+c is 116  t
+TOKEN_ID: they : at line 108
+c is 97  a
+TOKEN_ID: are : at line 108
+c is 101  e
+TOKEN_ID: equal : at line 108
+c is 97  a
+TOKEN_ID: and : at line 108
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 108
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 109
+c is 111  o
+TOKEN_ID: otherwise : at line 109
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 110
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 110
+c is 67  C
+TOKEN_ID: Compare : at line 110
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 110
+c is 105  i
+TOKEN_INT: <NONE> : at line 110
+c is 110  n
+TOKEN_ID: num1 : at line 110
+c is 44  ,
+TOKEN_COMMER: <NONE> : at line 110
+c is 105  i
+TOKEN_INT: <NONE> : at line 110
+c is 110  n
+TOKEN_ID: num2 : at line 110
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 110
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 110
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 111
+c is 110  n
+TOKEN_ID: ntb : at line 111
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 111
+c is 105  i
+TOKEN_INT: <NONE> : at line 112
+c is 110  n
+TOKEN_ID: nti : at line 112
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 112
+c is 110  n
+TOKEN_ID: ntb : at line 114
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 114
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 114
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 114
+c is 110  n
+TOKEN_ID: nti : at line 115
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 115
+c is 110  n
+TOKEN_ID: num2 : at line 115
+c is 43  +
+TOKEN_ADD: <NONE> : at line 115
+c is 49  1
+TOKEN_NUM: 1 : at line 115
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 115
+c is 105  i
+TOKEN_IF: <NONE> : at line 116
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 116
+c is 110  n
+TOKEN_ID: num1 : at line 116
+c is 60  <
+TOKEN_LT: <NONE> : at line 116
+c is 110  n
+TOKEN_ID: num2 : at line 116
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 116
+c is 110  n
+TOKEN_ID: ntb : at line 116
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 116
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 116
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 116
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 117
+c is 105  i
+TOKEN_IF: <NONE> : at line 117
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 117
+c is 33  !
+TOKEN_NOT: <NONE> : at line 117
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 117
+c is 110  n
+TOKEN_ID: num1 : at line 117
+c is 60  <
+TOKEN_LT: <NONE> : at line 117
+c is 110  n
+TOKEN_ID: nti : at line 117
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 117
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 117
+c is 110  n
+TOKEN_ID: ntb : at line 117
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 117
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 117
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 117
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 118
+c is 110  n
+TOKEN_ID: ntb : at line 118
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 118
+c is 116  t
+TOKEN_ID: true : at line 118
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 118
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 119
+c is 110  n
+TOKEN_ID: ntb : at line 119
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 119
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 120
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 123
+c is 73  I
+TOKEN_ID: Insert : at line 123
+c is 97  a
+TOKEN_ID: a : at line 123
+c is 110  n
+TOKEN_NEW: <NONE> : at line 123
+c is 101  e
+TOKEN_ID: element : at line 123
+c is 105  i
+TOKEN_ID: in : at line 123
+c is 116  t
+TOKEN_ID: the : at line 123
+c is 116  t
+TOKEN_ID: tree : at line 123
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 124
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 124
+c is 73  I
+TOKEN_ID: Insert : at line 124
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 124
+c is 105  i
+TOKEN_INT: <NONE> : at line 124
+c is 118  v
+TOKEN_ID: v_key : at line 124
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 124
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 124
+c is 84  T
+TOKEN_ID: Tree : at line 125
+c is 110  n
+TOKEN_ID: new_node : at line 125
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 125
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 126
+c is 110  n
+TOKEN_ID: ntb : at line 126
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 126
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 127
+c is 99  c
+TOKEN_ID: cont : at line 127
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 127
+c is 105  i
+TOKEN_INT: <NONE> : at line 128
+c is 107  k
+TOKEN_ID: key_aux : at line 128
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 128
+c is 84  T
+TOKEN_ID: Tree : at line 129
+c is 99  c
+TOKEN_ID: current_node : at line 129
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 129
+c is 110  n
+TOKEN_ID: new_node : at line 131
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 131
+c is 110  n
+TOKEN_NEW: <NONE> : at line 131
+c is 84  T
+TOKEN_ID: Tree : at line 131
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 131
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 131
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 131
+c is 110  n
+TOKEN_ID: ntb : at line 132
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 132
+c is 110  n
+TOKEN_ID: new_node : at line 132
+c is 46  .
+TOKEN_DOT: <NONE> : at line 132
+c is 73  I
+TOKEN_ID: Init : at line 132
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 132
+c is 118  v
+TOKEN_ID: v_key : at line 132
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 132
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 132
+c is 99  c
+TOKEN_ID: current_node : at line 133
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 133
+c is 116  t
+TOKEN_THIS: <NONE> : at line 133
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 133
+c is 99  c
+TOKEN_ID: cont : at line 134
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 134
+c is 116  t
+TOKEN_ID: true : at line 134
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 134
+c is 119  w
+TOKEN_WHILE: <NONE> : at line 135
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 135
+c is 99  c
+TOKEN_ID: cont : at line 135
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 135
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 135
+c is 107  k
+TOKEN_ID: key_aux : at line 136
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 136
+c is 99  c
+TOKEN_ID: current_node : at line 136
+c is 46  .
+TOKEN_DOT: <NONE> : at line 136
+c is 71  G
+TOKEN_ID: GetKey : at line 136
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 136
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 136
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 136
+c is 105  i
+TOKEN_IF: <NONE> : at line 137
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 137
+c is 118  v
+TOKEN_ID: v_key : at line 137
+c is 60  <
+TOKEN_LT: <NONE> : at line 137
+c is 107  k
+TOKEN_ID: key_aux : at line 137
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 137
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 137
+c is 105  i
+TOKEN_IF: <NONE> : at line 138
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 138
+c is 99  c
+TOKEN_ID: current_node : at line 138
+c is 46  .
+TOKEN_DOT: <NONE> : at line 138
+c is 71  G
+TOKEN_ID: GetHas_Left : at line 138
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 138
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 138
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 138
+c is 99  c
+TOKEN_ID: current_node : at line 139
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 139
+c is 99  c
+TOKEN_ID: current_node : at line 139
+c is 46  .
+TOKEN_DOT: <NONE> : at line 139
+c is 71  G
+TOKEN_ID: GetLeft : at line 139
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 139
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 139
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 139
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 140
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 140
+c is 99  c
+TOKEN_ID: cont : at line 141
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 141
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 141
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 141
+c is 110  n
+TOKEN_ID: ntb : at line 142
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 142
+c is 99  c
+TOKEN_ID: current_node : at line 142
+c is 46  .
+TOKEN_DOT: <NONE> : at line 142
+c is 83  S
+TOKEN_ID: SetHas_Left : at line 142
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 142
+c is 116  t
+TOKEN_ID: true : at line 142
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 142
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 142
+c is 110  n
+TOKEN_ID: ntb : at line 143
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 143
+c is 99  c
+TOKEN_ID: current_node : at line 143
+c is 46  .
+TOKEN_DOT: <NONE> : at line 143
+c is 83  S
+TOKEN_ID: SetLeft : at line 143
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 143
+c is 110  n
+TOKEN_ID: new_node : at line 143
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 143
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 143
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 144
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 145
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 146
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 146
+c is 105  i
+TOKEN_IF: <NONE> : at line 147
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 147
+c is 99  c
+TOKEN_ID: current_node : at line 147
+c is 46  .
+TOKEN_DOT: <NONE> : at line 147
+c is 71  G
+TOKEN_ID: GetHas_Right : at line 147
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 147
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 147
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 147
+c is 99  c
+TOKEN_ID: current_node : at line 148
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 148
+c is 99  c
+TOKEN_ID: current_node : at line 148
+c is 46  .
+TOKEN_DOT: <NONE> : at line 148
+c is 71  G
+TOKEN_ID: GetRight : at line 148
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 148
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 148
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 148
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 149
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 149
+c is 99  c
+TOKEN_ID: cont : at line 150
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 150
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 150
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 150
+c is 110  n
+TOKEN_ID: ntb : at line 151
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 151
+c is 99  c
+TOKEN_ID: current_node : at line 151
+c is 46  .
+TOKEN_DOT: <NONE> : at line 151
+c is 83  S
+TOKEN_ID: SetHas_Right : at line 151
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 151
+c is 116  t
+TOKEN_ID: true : at line 151
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 151
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 151
+c is 110  n
+TOKEN_ID: ntb : at line 152
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 152
+c is 99  c
+TOKEN_ID: current_node : at line 152
+c is 46  .
+TOKEN_DOT: <NONE> : at line 152
+c is 83  S
+TOKEN_ID: SetRight : at line 152
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 152
+c is 110  n
+TOKEN_ID: new_node : at line 152
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 152
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 152
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 153
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 154
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 155
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 156
+c is 116  t
+TOKEN_ID: true : at line 156
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 156
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 157
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 160
+c is 68  D
+TOKEN_ID: Delete : at line 160
+c is 97  a
+TOKEN_ID: an : at line 160
+c is 101  e
+TOKEN_ID: element : at line 160
+c is 102  f
+TOKEN_ID: from : at line 160
+c is 116  t
+TOKEN_ID: the : at line 160
+c is 116  t
+TOKEN_ID: tree : at line 160
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 161
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 161
+c is 68  D
+TOKEN_ID: Delete : at line 161
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 161
+c is 105  i
+TOKEN_INT: <NONE> : at line 161
+c is 118  v
+TOKEN_ID: v_key : at line 161
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 161
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 161
+c is 84  T
+TOKEN_ID: Tree : at line 162
+c is 99  c
+TOKEN_ID: current_node : at line 162
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 162
+c is 84  T
+TOKEN_ID: Tree : at line 163
+c is 112  p
+TOKEN_ID: parent_node : at line 163
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 163
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 164
+c is 99  c
+TOKEN_ID: cont : at line 164
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 164
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 165
+c is 102  f
+TOKEN_ID: found : at line 165
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 165
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 166
+c is 105  i
+TOKEN_ID: is_root : at line 166
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 166
+c is 105  i
+TOKEN_INT: <NONE> : at line 167
+c is 107  k
+TOKEN_ID: key_aux : at line 167
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 167
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 168
+c is 110  n
+TOKEN_ID: ntb : at line 168
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 168
+c is 99  c
+TOKEN_ID: current_node : at line 170
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 170
+c is 116  t
+TOKEN_THIS: <NONE> : at line 170
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 170
+c is 112  p
+TOKEN_ID: parent_node : at line 171
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 171
+c is 116  t
+TOKEN_THIS: <NONE> : at line 171
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 171
+c is 99  c
+TOKEN_ID: cont : at line 172
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 172
+c is 116  t
+TOKEN_ID: true : at line 172
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 172
+c is 102  f
+TOKEN_ID: found : at line 173
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 173
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 173
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 173
+c is 105  i
+TOKEN_ID: is_root : at line 174
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 174
+c is 116  t
+TOKEN_ID: true : at line 174
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 174
+c is 119  w
+TOKEN_WHILE: <NONE> : at line 175
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 175
+c is 99  c
+TOKEN_ID: cont : at line 175
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 175
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 175
+c is 107  k
+TOKEN_ID: key_aux : at line 176
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 176
+c is 99  c
+TOKEN_ID: current_node : at line 176
+c is 46  .
+TOKEN_DOT: <NONE> : at line 176
+c is 71  G
+TOKEN_ID: GetKey : at line 176
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 176
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 176
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 176
+c is 105  i
+TOKEN_IF: <NONE> : at line 177
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 177
+c is 118  v
+TOKEN_ID: v_key : at line 177
+c is 60  <
+TOKEN_LT: <NONE> : at line 177
+c is 107  k
+TOKEN_ID: key_aux : at line 177
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 177
+c is 105  i
+TOKEN_IF: <NONE> : at line 178
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 178
+c is 99  c
+TOKEN_ID: current_node : at line 178
+c is 46  .
+TOKEN_DOT: <NONE> : at line 178
+c is 71  G
+TOKEN_ID: GetHas_Left : at line 178
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 178
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 178
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 178
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 178
+c is 112  p
+TOKEN_ID: parent_node : at line 179
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 179
+c is 99  c
+TOKEN_ID: current_node : at line 179
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 179
+c is 99  c
+TOKEN_ID: current_node : at line 180
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 180
+c is 99  c
+TOKEN_ID: current_node : at line 180
+c is 46  .
+TOKEN_DOT: <NONE> : at line 180
+c is 71  G
+TOKEN_ID: GetLeft : at line 180
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 180
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 180
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 180
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 181
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 182
+c is 99  c
+TOKEN_ID: cont : at line 182
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 182
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 182
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 182
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 183
+c is 105  i
+TOKEN_IF: <NONE> : at line 184
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 184
+c is 107  k
+TOKEN_ID: key_aux : at line 184
+c is 60  <
+TOKEN_LT: <NONE> : at line 184
+c is 118  v
+TOKEN_ID: v_key : at line 184
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 184
+c is 105  i
+TOKEN_IF: <NONE> : at line 185
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 185
+c is 99  c
+TOKEN_ID: current_node : at line 185
+c is 46  .
+TOKEN_DOT: <NONE> : at line 185
+c is 71  G
+TOKEN_ID: GetHas_Right : at line 185
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 185
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 185
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 185
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 185
+c is 112  p
+TOKEN_ID: parent_node : at line 186
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 186
+c is 99  c
+TOKEN_ID: current_node : at line 186
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 186
+c is 99  c
+TOKEN_ID: current_node : at line 187
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 187
+c is 99  c
+TOKEN_ID: current_node : at line 187
+c is 46  .
+TOKEN_DOT: <NONE> : at line 187
+c is 71  G
+TOKEN_ID: GetRight : at line 187
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 187
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 187
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 187
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 188
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 189
+c is 99  c
+TOKEN_ID: cont : at line 189
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 189
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 189
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 189
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 190
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 190
+c is 105  i
+TOKEN_IF: <NONE> : at line 191
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 191
+c is 105  i
+TOKEN_ID: is_root : at line 191
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 191
+c is 105  i
+TOKEN_IF: <NONE> : at line 192
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 192
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 192
+c is 33  !
+TOKEN_NOT: <NONE> : at line 192
+c is 99  c
+TOKEN_ID: current_node : at line 192
+c is 46  .
+TOKEN_DOT: <NONE> : at line 192
+c is 71  G
+TOKEN_ID: GetHas_Right : at line 192
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 192
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 192
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 192
+c is 38  &
+TOKEN_AND: <NONE> : at line 192
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 193
+c is 33  !
+TOKEN_NOT: <NONE> : at line 193
+c is 99  c
+TOKEN_ID: current_node : at line 193
+c is 46  .
+TOKEN_DOT: <NONE> : at line 193
+c is 71  G
+TOKEN_ID: GetHas_Left : at line 193
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 193
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 193
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 193
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 193
+c is 110  n
+TOKEN_ID: ntb : at line 194
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 194
+c is 116  t
+TOKEN_ID: true : at line 194
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 194
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 195
+c is 110  n
+TOKEN_ID: ntb : at line 196
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 196
+c is 116  t
+TOKEN_THIS: <NONE> : at line 196
+c is 46  .
+TOKEN_DOT: <NONE> : at line 196
+c is 82  R
+TOKEN_ID: Remove : at line 196
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 196
+c is 112  p
+TOKEN_ID: parent_node : at line 196
+c is 44  ,
+TOKEN_COMMER: <NONE> : at line 196
+c is 99  c
+TOKEN_ID: current_node : at line 196
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 196
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 196
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 197
+c is 110  n
+TOKEN_ID: ntb : at line 197
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 197
+c is 116  t
+TOKEN_THIS: <NONE> : at line 197
+c is 46  .
+TOKEN_DOT: <NONE> : at line 197
+c is 82  R
+TOKEN_ID: Remove : at line 197
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 197
+c is 112  p
+TOKEN_ID: parent_node : at line 197
+c is 44  ,
+TOKEN_COMMER: <NONE> : at line 197
+c is 99  c
+TOKEN_ID: current_node : at line 197
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 197
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 197
+c is 102  f
+TOKEN_ID: found : at line 198
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 198
+c is 116  t
+TOKEN_ID: true : at line 198
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 198
+c is 99  c
+TOKEN_ID: cont : at line 199
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 199
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 199
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 199
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 200
+c is 105  i
+TOKEN_ID: is_root : at line 201
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 201
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 201
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 201
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 202
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 203
+c is 102  f
+TOKEN_ID: found : at line 203
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 203
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 204
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 207
+c is 67  C
+TOKEN_ID: Check : at line 207
+c is 105  i
+TOKEN_IF: <NONE> : at line 207
+c is 116  t
+TOKEN_ID: the : at line 207
+c is 101  e
+TOKEN_ID: element : at line 207
+c is 116  t
+TOKEN_ID: to : at line 207
+c is 98  b
+TOKEN_ID: be : at line 207
+c is 114  r
+TOKEN_ID: removed : at line 207
+c is 119  w
+TOKEN_ID: will : at line 207
+c is 117  u
+TOKEN_ID: use : at line 207
+c is 116  t
+TOKEN_ID: the : at line 207
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 208
+c is 114  r
+TOKEN_ID: righ : at line 208
+c is 111  o
+TOKEN_ID: or : at line 208
+c is 108  l
+TOKEN_ID: left : at line 208
+c is 115  s
+TOKEN_ID: subtree : at line 208
+c is 105  i
+TOKEN_IF: <NONE> : at line 208
+c is 111  o
+TOKEN_ID: one : at line 208
+c is 101  e
+TOKEN_ID: exists : at line 208
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 209
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 209
+c is 82  R
+TOKEN_ID: Remove : at line 209
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 209
+c is 84  T
+TOKEN_ID: Tree : at line 209
+c is 112  p
+TOKEN_ID: p_node : at line 209
+c is 44  ,
+TOKEN_COMMER: <NONE> : at line 209
+c is 84  T
+TOKEN_ID: Tree : at line 209
+c is 99  c
+TOKEN_ID: c_node : at line 209
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 209
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 209
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 210
+c is 110  n
+TOKEN_ID: ntb : at line 210
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 210
+c is 105  i
+TOKEN_INT: <NONE> : at line 211
+c is 97  a
+TOKEN_ID: auxkey1 : at line 211
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 211
+c is 105  i
+TOKEN_INT: <NONE> : at line 212
+c is 97  a
+TOKEN_ID: auxkey2 : at line 212
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 212
+c is 105  i
+TOKEN_IF: <NONE> : at line 214
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 214
+c is 99  c
+TOKEN_ID: c_node : at line 214
+c is 46  .
+TOKEN_DOT: <NONE> : at line 214
+c is 71  G
+TOKEN_ID: GetHas_Left : at line 214
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 214
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 214
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 214
+c is 110  n
+TOKEN_ID: ntb : at line 215
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 215
+c is 116  t
+TOKEN_THIS: <NONE> : at line 215
+c is 46  .
+TOKEN_DOT: <NONE> : at line 215
+c is 82  R
+TOKEN_ID: RemoveLeft : at line 215
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 215
+c is 112  p
+TOKEN_ID: p_node : at line 215
+c is 44  ,
+TOKEN_COMMER: <NONE> : at line 215
+c is 99  c
+TOKEN_ID: c_node : at line 215
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 215
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 215
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 216
+c is 105  i
+TOKEN_IF: <NONE> : at line 217
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 217
+c is 99  c
+TOKEN_ID: c_node : at line 217
+c is 46  .
+TOKEN_DOT: <NONE> : at line 217
+c is 71  G
+TOKEN_ID: GetHas_Right : at line 217
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 217
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 217
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 217
+c is 110  n
+TOKEN_ID: ntb : at line 218
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 218
+c is 116  t
+TOKEN_THIS: <NONE> : at line 218
+c is 46  .
+TOKEN_DOT: <NONE> : at line 218
+c is 82  R
+TOKEN_ID: RemoveRight : at line 218
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 218
+c is 112  p
+TOKEN_ID: p_node : at line 218
+c is 44  ,
+TOKEN_COMMER: <NONE> : at line 218
+c is 99  c
+TOKEN_ID: c_node : at line 218
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 218
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 218
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 219
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 219
+c is 97  a
+TOKEN_ID: auxkey1 : at line 220
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 220
+c is 99  c
+TOKEN_ID: c_node : at line 220
+c is 46  .
+TOKEN_DOT: <NONE> : at line 220
+c is 71  G
+TOKEN_ID: GetKey : at line 220
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 220
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 220
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 220
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 221
+c is 97  a
+TOKEN_ID: auxtree01 : at line 221
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 221
+c is 112  p
+TOKEN_ID: p_node : at line 221
+c is 46  .
+TOKEN_DOT: <NONE> : at line 221
+c is 71  G
+TOKEN_ID: GetLeft : at line 221
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 221
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 221
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 221
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 222
+c is 97  a
+TOKEN_ID: auxkey2 : at line 222
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 222
+c is 97  a
+TOKEN_ID: auxtree01 : at line 222
+c is 46  .
+TOKEN_DOT: <NONE> : at line 222
+c is 71  G
+TOKEN_ID: GetKey : at line 222
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 222
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 222
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 222
+c is 97  a
+TOKEN_ID: auxkey2 : at line 223
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 223
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 223
+c is 112  p
+TOKEN_ID: p_node : at line 223
+c is 46  .
+TOKEN_DOT: <NONE> : at line 223
+c is 71  G
+TOKEN_ID: GetLeft : at line 223
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 223
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 223
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 223
+c is 46  .
+TOKEN_DOT: <NONE> : at line 223
+c is 71  G
+TOKEN_ID: GetKey : at line 223
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 223
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 223
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 223
+c is 105  i
+TOKEN_IF: <NONE> : at line 224
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 224
+c is 116  t
+TOKEN_THIS: <NONE> : at line 224
+c is 46  .
+TOKEN_DOT: <NONE> : at line 224
+c is 67  C
+TOKEN_ID: Compare : at line 224
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 224
+c is 97  a
+TOKEN_ID: auxkey1 : at line 224
+c is 44  ,
+TOKEN_COMMER: <NONE> : at line 224
+c is 97  a
+TOKEN_ID: auxkey2 : at line 224
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 224
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 224
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 224
+c is 110  n
+TOKEN_ID: ntb : at line 225
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 225
+c is 112  p
+TOKEN_ID: p_node : at line 225
+c is 46  .
+TOKEN_DOT: <NONE> : at line 225
+c is 83  S
+TOKEN_ID: SetLeft : at line 225
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 225
+c is 109  m
+TOKEN_ID: my_null : at line 225
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 225
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 225
+c is 110  n
+TOKEN_ID: ntb : at line 226
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 226
+c is 112  p
+TOKEN_ID: p_node : at line 226
+c is 46  .
+TOKEN_DOT: <NONE> : at line 226
+c is 83  S
+TOKEN_ID: SetHas_Left : at line 226
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 226
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 226
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 226
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 226
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 227
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 228
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 228
+c is 110  n
+TOKEN_ID: ntb : at line 229
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 229
+c is 112  p
+TOKEN_ID: p_node : at line 229
+c is 46  .
+TOKEN_DOT: <NONE> : at line 229
+c is 83  S
+TOKEN_ID: SetRight : at line 229
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 229
+c is 109  m
+TOKEN_ID: my_null : at line 229
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 229
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 229
+c is 110  n
+TOKEN_ID: ntb : at line 230
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 230
+c is 112  p
+TOKEN_ID: p_node : at line 230
+c is 46  .
+TOKEN_DOT: <NONE> : at line 230
+c is 83  S
+TOKEN_ID: SetHas_Right : at line 230
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 230
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 230
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 230
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 230
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 231
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 232
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 233
+c is 116  t
+TOKEN_ID: true : at line 233
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 233
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 234
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 237
+c is 67  C
+TOKEN_ID: Copy : at line 237
+c is 116  t
+TOKEN_ID: the : at line 237
+c is 99  c
+TOKEN_ID: child : at line 237
+c is 107  k
+TOKEN_ID: key : at line 237
+c is 116  t
+TOKEN_ID: to : at line 237
+c is 116  t
+TOKEN_ID: the : at line 237
+c is 112  p
+TOKEN_ID: parent : at line 237
+c is 117  u
+TOKEN_ID: until : at line 237
+c is 97  a
+TOKEN_ID: a : at line 237
+c is 108  l
+TOKEN_ID: leaf : at line 237
+c is 105  i
+TOKEN_ID: is : at line 237
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 238
+c is 102  f
+TOKEN_ID: found : at line 238
+c is 97  a
+TOKEN_ID: and : at line 238
+c is 114  r
+TOKEN_ID: remove : at line 238
+c is 116  t
+TOKEN_ID: the : at line 238
+c is 108  l
+TOKEN_ID: leaf : at line 238
+c is 46  .
+TOKEN_DOT: <NONE> : at line 238
+c is 84  T
+TOKEN_ID: This : at line 238
+c is 105  i
+TOKEN_ID: is : at line 238
+c is 100  d
+TOKEN_ID: done : at line 238
+c is 119  w
+TOKEN_ID: with : at line 238
+c is 116  t
+TOKEN_ID: the : at line 238
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 239
+c is 114  r
+TOKEN_ID: right : at line 239
+c is 115  s
+TOKEN_ID: subtree : at line 239
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 240
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 240
+c is 82  R
+TOKEN_ID: RemoveRight : at line 240
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 240
+c is 84  T
+TOKEN_ID: Tree : at line 240
+c is 112  p
+TOKEN_ID: p_node : at line 240
+c is 44  ,
+TOKEN_COMMER: <NONE> : at line 240
+c is 84  T
+TOKEN_ID: Tree : at line 240
+c is 99  c
+TOKEN_ID: c_node : at line 240
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 240
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 240
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 241
+c is 110  n
+TOKEN_ID: ntb : at line 241
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 241
+c is 119  w
+TOKEN_WHILE: <NONE> : at line 243
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 243
+c is 99  c
+TOKEN_ID: c_node : at line 243
+c is 46  .
+TOKEN_DOT: <NONE> : at line 243
+c is 71  G
+TOKEN_ID: GetHas_Right : at line 243
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 243
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 243
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 243
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 243
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 244
+c is 97  a
+TOKEN_ID: auxtree01 : at line 244
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 244
+c is 99  c
+TOKEN_ID: c_node : at line 244
+c is 46  .
+TOKEN_DOT: <NONE> : at line 244
+c is 71  G
+TOKEN_ID: GetRight : at line 244
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 244
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 244
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 244
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 245
+c is 97  a
+TOKEN_ID: auxint02 : at line 245
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 245
+c is 97  a
+TOKEN_ID: auxtree01 : at line 245
+c is 46  .
+TOKEN_DOT: <NONE> : at line 245
+c is 71  G
+TOKEN_ID: GetKey : at line 245
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 245
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 245
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 245
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 246
+c is 110  n
+TOKEN_ID: ntb : at line 246
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 246
+c is 99  c
+TOKEN_ID: c_node : at line 246
+c is 46  .
+TOKEN_DOT: <NONE> : at line 246
+c is 83  S
+TOKEN_ID: SetKey : at line 246
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 246
+c is 97  a
+TOKEN_ID: auxint02 : at line 246
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 246
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 246
+c is 110  n
+TOKEN_ID: ntb : at line 247
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 247
+c is 99  c
+TOKEN_ID: c_node : at line 247
+c is 46  .
+TOKEN_DOT: <NONE> : at line 247
+c is 83  S
+TOKEN_ID: SetKey : at line 247
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 247
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 247
+c is 99  c
+TOKEN_ID: c_node : at line 247
+c is 46  .
+TOKEN_DOT: <NONE> : at line 247
+c is 71  G
+TOKEN_ID: GetRight : at line 247
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 247
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 247
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 247
+c is 46  .
+TOKEN_DOT: <NONE> : at line 247
+c is 71  G
+TOKEN_ID: GetKey : at line 247
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 247
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 247
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 247
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 247
+c is 112  p
+TOKEN_ID: p_node : at line 248
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 248
+c is 99  c
+TOKEN_ID: c_node : at line 248
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 248
+c is 99  c
+TOKEN_ID: c_node : at line 249
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 249
+c is 99  c
+TOKEN_ID: c_node : at line 249
+c is 46  .
+TOKEN_DOT: <NONE> : at line 249
+c is 71  G
+TOKEN_ID: GetRight : at line 249
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 249
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 249
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 249
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 250
+c is 110  n
+TOKEN_ID: ntb : at line 251
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 251
+c is 112  p
+TOKEN_ID: p_node : at line 251
+c is 46  .
+TOKEN_DOT: <NONE> : at line 251
+c is 83  S
+TOKEN_ID: SetRight : at line 251
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 251
+c is 109  m
+TOKEN_ID: my_null : at line 251
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 251
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 251
+c is 110  n
+TOKEN_ID: ntb : at line 252
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 252
+c is 112  p
+TOKEN_ID: p_node : at line 252
+c is 46  .
+TOKEN_DOT: <NONE> : at line 252
+c is 83  S
+TOKEN_ID: SetHas_Right : at line 252
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 252
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 252
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 252
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 252
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 253
+c is 116  t
+TOKEN_ID: true : at line 253
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 253
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 254
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 257
+c is 67  C
+TOKEN_ID: Copy : at line 257
+c is 116  t
+TOKEN_ID: the : at line 257
+c is 99  c
+TOKEN_ID: child : at line 257
+c is 107  k
+TOKEN_ID: key : at line 257
+c is 116  t
+TOKEN_ID: to : at line 257
+c is 116  t
+TOKEN_ID: the : at line 257
+c is 112  p
+TOKEN_ID: parent : at line 257
+c is 117  u
+TOKEN_ID: until : at line 257
+c is 97  a
+TOKEN_ID: a : at line 257
+c is 108  l
+TOKEN_ID: leaf : at line 257
+c is 105  i
+TOKEN_ID: is : at line 257
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 258
+c is 102  f
+TOKEN_ID: found : at line 258
+c is 97  a
+TOKEN_ID: and : at line 258
+c is 114  r
+TOKEN_ID: remove : at line 258
+c is 116  t
+TOKEN_ID: the : at line 258
+c is 108  l
+TOKEN_ID: leaf : at line 258
+c is 46  .
+TOKEN_DOT: <NONE> : at line 258
+c is 84  T
+TOKEN_ID: This : at line 258
+c is 105  i
+TOKEN_ID: is : at line 258
+c is 100  d
+TOKEN_ID: done : at line 258
+c is 119  w
+TOKEN_ID: with : at line 258
+c is 116  t
+TOKEN_ID: the : at line 258
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 259
+c is 108  l
+TOKEN_ID: left : at line 259
+c is 115  s
+TOKEN_ID: subtree : at line 259
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 260
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 260
+c is 82  R
+TOKEN_ID: RemoveLeft : at line 260
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 260
+c is 84  T
+TOKEN_ID: Tree : at line 260
+c is 112  p
+TOKEN_ID: p_node : at line 260
+c is 44  ,
+TOKEN_COMMER: <NONE> : at line 260
+c is 84  T
+TOKEN_ID: Tree : at line 260
+c is 99  c
+TOKEN_ID: c_node : at line 260
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 260
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 260
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 261
+c is 110  n
+TOKEN_ID: ntb : at line 261
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 261
+c is 119  w
+TOKEN_WHILE: <NONE> : at line 263
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 263
+c is 99  c
+TOKEN_ID: c_node : at line 263
+c is 46  .
+TOKEN_DOT: <NONE> : at line 263
+c is 71  G
+TOKEN_ID: GetHas_Left : at line 263
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 263
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 263
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 263
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 263
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 264
+c is 97  a
+TOKEN_ID: auxtree01 : at line 264
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 264
+c is 99  c
+TOKEN_ID: c_node : at line 264
+c is 46  .
+TOKEN_DOT: <NONE> : at line 264
+c is 71  G
+TOKEN_ID: GetLeft : at line 264
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 264
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 264
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 264
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 265
+c is 97  a
+TOKEN_ID: auxint02 : at line 265
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 265
+c is 97  a
+TOKEN_ID: auxtree01 : at line 265
+c is 46  .
+TOKEN_DOT: <NONE> : at line 265
+c is 71  G
+TOKEN_ID: GetKey : at line 265
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 265
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 265
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 265
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 266
+c is 110  n
+TOKEN_ID: ntb : at line 266
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 266
+c is 99  c
+TOKEN_ID: c_node : at line 266
+c is 46  .
+TOKEN_DOT: <NONE> : at line 266
+c is 83  S
+TOKEN_ID: SetKey : at line 266
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 266
+c is 97  a
+TOKEN_ID: auxint02 : at line 266
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 266
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 266
+c is 110  n
+TOKEN_ID: ntb : at line 267
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 267
+c is 99  c
+TOKEN_ID: c_node : at line 267
+c is 46  .
+TOKEN_DOT: <NONE> : at line 267
+c is 83  S
+TOKEN_ID: SetKey : at line 267
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 267
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 267
+c is 99  c
+TOKEN_ID: c_node : at line 267
+c is 46  .
+TOKEN_DOT: <NONE> : at line 267
+c is 71  G
+TOKEN_ID: GetLeft : at line 267
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 267
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 267
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 267
+c is 46  .
+TOKEN_DOT: <NONE> : at line 267
+c is 71  G
+TOKEN_ID: GetKey : at line 267
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 267
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 267
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 267
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 267
+c is 112  p
+TOKEN_ID: p_node : at line 268
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 268
+c is 99  c
+TOKEN_ID: c_node : at line 268
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 268
+c is 99  c
+TOKEN_ID: c_node : at line 269
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 269
+c is 99  c
+TOKEN_ID: c_node : at line 269
+c is 46  .
+TOKEN_DOT: <NONE> : at line 269
+c is 71  G
+TOKEN_ID: GetLeft : at line 269
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 269
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 269
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 269
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 270
+c is 110  n
+TOKEN_ID: ntb : at line 271
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 271
+c is 112  p
+TOKEN_ID: p_node : at line 271
+c is 46  .
+TOKEN_DOT: <NONE> : at line 271
+c is 83  S
+TOKEN_ID: SetLeft : at line 271
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 271
+c is 109  m
+TOKEN_ID: my_null : at line 271
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 271
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 271
+c is 110  n
+TOKEN_ID: ntb : at line 272
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 272
+c is 112  p
+TOKEN_ID: p_node : at line 272
+c is 46  .
+TOKEN_DOT: <NONE> : at line 272
+c is 83  S
+TOKEN_ID: SetHas_Left : at line 272
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 272
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 272
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 272
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 272
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 273
+c is 116  t
+TOKEN_ID: true : at line 273
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 273
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 274
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 276
+c is 83  S
+TOKEN_ID: Search : at line 276
+c is 102  f
+TOKEN_FOR: <NONE> : at line 276
+c is 97  a
+TOKEN_ID: an : at line 276
+c is 101  e
+TOKEN_ID: elemnt : at line 276
+c is 105  i
+TOKEN_ID: in : at line 276
+c is 116  t
+TOKEN_ID: the : at line 276
+c is 116  t
+TOKEN_ID: tree : at line 276
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 277
+c is 105  i
+TOKEN_INT: <NONE> : at line 277
+c is 83  S
+TOKEN_ID: Search : at line 277
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 277
+c is 105  i
+TOKEN_INT: <NONE> : at line 277
+c is 118  v
+TOKEN_ID: v_key : at line 277
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 277
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 277
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 278
+c is 99  c
+TOKEN_ID: cont : at line 278
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 278
+c is 105  i
+TOKEN_INT: <NONE> : at line 279
+c is 105  i
+TOKEN_ID: ifound : at line 279
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 279
+c is 84  T
+TOKEN_ID: Tree : at line 280
+c is 99  c
+TOKEN_ID: current_node : at line 280
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 280
+c is 105  i
+TOKEN_INT: <NONE> : at line 281
+c is 107  k
+TOKEN_ID: key_aux : at line 281
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 281
+c is 99  c
+TOKEN_ID: current_node : at line 283
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 283
+c is 116  t
+TOKEN_THIS: <NONE> : at line 283
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 283
+c is 99  c
+TOKEN_ID: cont : at line 284
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 284
+c is 116  t
+TOKEN_ID: true : at line 284
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 284
+c is 105  i
+TOKEN_ID: ifound : at line 285
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 285
+c is 48  0
+TOKEN_NUM: 0 : at line 285
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 285
+c is 119  w
+TOKEN_WHILE: <NONE> : at line 286
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 286
+c is 99  c
+TOKEN_ID: cont : at line 286
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 286
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 286
+c is 107  k
+TOKEN_ID: key_aux : at line 287
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 287
+c is 99  c
+TOKEN_ID: current_node : at line 287
+c is 46  .
+TOKEN_DOT: <NONE> : at line 287
+c is 71  G
+TOKEN_ID: GetKey : at line 287
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 287
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 287
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 287
+c is 105  i
+TOKEN_IF: <NONE> : at line 288
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 288
+c is 118  v
+TOKEN_ID: v_key : at line 288
+c is 60  <
+TOKEN_LT: <NONE> : at line 288
+c is 107  k
+TOKEN_ID: key_aux : at line 288
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 288
+c is 105  i
+TOKEN_IF: <NONE> : at line 289
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 289
+c is 99  c
+TOKEN_ID: current_node : at line 289
+c is 46  .
+TOKEN_DOT: <NONE> : at line 289
+c is 71  G
+TOKEN_ID: GetHas_Left : at line 289
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 289
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 289
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 289
+c is 99  c
+TOKEN_ID: current_node : at line 290
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 290
+c is 99  c
+TOKEN_ID: current_node : at line 290
+c is 46  .
+TOKEN_DOT: <NONE> : at line 290
+c is 71  G
+TOKEN_ID: GetLeft : at line 290
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 290
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 290
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 290
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 291
+c is 99  c
+TOKEN_ID: cont : at line 291
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 291
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 291
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 291
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 292
+c is 105  i
+TOKEN_IF: <NONE> : at line 293
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 293
+c is 107  k
+TOKEN_ID: key_aux : at line 293
+c is 60  <
+TOKEN_LT: <NONE> : at line 293
+c is 118  v
+TOKEN_ID: v_key : at line 293
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 293
+c is 105  i
+TOKEN_IF: <NONE> : at line 294
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 294
+c is 99  c
+TOKEN_ID: current_node : at line 294
+c is 46  .
+TOKEN_DOT: <NONE> : at line 294
+c is 71  G
+TOKEN_ID: GetHas_Right : at line 294
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 294
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 294
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 294
+c is 99  c
+TOKEN_ID: current_node : at line 295
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 295
+c is 99  c
+TOKEN_ID: current_node : at line 295
+c is 46  .
+TOKEN_DOT: <NONE> : at line 295
+c is 71  G
+TOKEN_ID: GetRight : at line 295
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 295
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 295
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 295
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 296
+c is 99  c
+TOKEN_ID: cont : at line 296
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 296
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 296
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 296
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 297
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 297
+c is 105  i
+TOKEN_ID: ifound : at line 298
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 298
+c is 49  1
+TOKEN_NUM: 1 : at line 298
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 298
+c is 99  c
+TOKEN_ID: cont : at line 299
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 299
+c is 102  f
+TOKEN_FALSE: <NONE> : at line 299
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 299
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 300
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 301
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 302
+c is 105  i
+TOKEN_ID: ifound : at line 302
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 302
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 303
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 305
+c is 73  I
+TOKEN_ID: Invoke : at line 305
+c is 116  t
+TOKEN_ID: the : at line 305
+c is 109  m
+TOKEN_ID: method : at line 305
+c is 116  t
+TOKEN_ID: to : at line 305
+c is 114  r
+TOKEN_ID: really : at line 305
+c is 112  p
+TOKEN_PRINT: <NONE> : at line 305
+c is 116  t
+TOKEN_ID: the : at line 305
+c is 116  t
+TOKEN_ID: tree : at line 305
+c is 101  e
+TOKEN_ID: elements : at line 305
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 306
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 306
+c is 80  P
+TOKEN_ID: Print : at line 306
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 306
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 306
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 306
+c is 84  T
+TOKEN_ID: Tree : at line 307
+c is 99  c
+TOKEN_ID: current_node : at line 307
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 307
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 308
+c is 110  n
+TOKEN_ID: ntb : at line 308
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 308
+c is 99  c
+TOKEN_ID: current_node : at line 310
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 310
+c is 116  t
+TOKEN_THIS: <NONE> : at line 310
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 310
+c is 110  n
+TOKEN_ID: ntb : at line 311
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 311
+c is 116  t
+TOKEN_THIS: <NONE> : at line 311
+c is 46  .
+TOKEN_DOT: <NONE> : at line 311
+c is 82  R
+TOKEN_ID: RecPrint : at line 311
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 311
+c is 99  c
+TOKEN_ID: current_node : at line 311
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 311
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 311
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 312
+c is 116  t
+TOKEN_ID: true : at line 312
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 312
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 313
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 315
+c is 80  P
+TOKEN_ID: Print : at line 315
+c is 116  t
+TOKEN_ID: the : at line 315
+c is 101  e
+TOKEN_ID: elements : at line 315
+c is 111  o
+TOKEN_ID: of : at line 315
+c is 116  t
+TOKEN_ID: the : at line 315
+c is 116  t
+TOKEN_ID: tree : at line 315
+c is 112  p
+TOKEN_PUBLIC: <NONE> : at line 316
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 316
+c is 82  R
+TOKEN_ID: RecPrint : at line 316
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 316
+c is 84  T
+TOKEN_ID: Tree : at line 316
+c is 110  n
+TOKEN_ID: node : at line 316
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 316
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 316
+c is 98  b
+TOKEN_BOOLEAN: <NONE> : at line 317
+c is 110  n
+TOKEN_ID: ntb : at line 317
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 317
+c is 105  i
+TOKEN_IF: <NONE> : at line 319
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 319
+c is 110  n
+TOKEN_ID: node : at line 319
+c is 46  .
+TOKEN_DOT: <NONE> : at line 319
+c is 71  G
+TOKEN_ID: GetHas_Left : at line 319
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 319
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 319
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 319
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 319
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 320
+c is 97  a
+TOKEN_ID: auxtree01 : at line 320
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 320
+c is 110  n
+TOKEN_ID: node : at line 320
+c is 46  .
+TOKEN_DOT: <NONE> : at line 320
+c is 71  G
+TOKEN_ID: GetLeft : at line 320
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 320
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 320
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 320
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 321
+c is 110  n
+TOKEN_ID: ntb : at line 321
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 321
+c is 116  t
+TOKEN_THIS: <NONE> : at line 321
+c is 46  .
+TOKEN_DOT: <NONE> : at line 321
+c is 82  R
+TOKEN_ID: RecPrint : at line 321
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 321
+c is 97  a
+TOKEN_ID: auxtree01 : at line 321
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 321
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 321
+c is 110  n
+TOKEN_ID: ntb : at line 322
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 322
+c is 116  t
+TOKEN_THIS: <NONE> : at line 322
+c is 46  .
+TOKEN_DOT: <NONE> : at line 322
+c is 82  R
+TOKEN_ID: RecPrint : at line 322
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 322
+c is 110  n
+TOKEN_ID: node : at line 322
+c is 46  .
+TOKEN_DOT: <NONE> : at line 322
+c is 71  G
+TOKEN_ID: GetLeft : at line 322
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 322
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 322
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 322
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 322
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 323
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 323
+c is 110  n
+TOKEN_ID: ntb : at line 323
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 323
+c is 116  t
+TOKEN_ID: true : at line 323
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 323
+c is 83  S
+TOKEN_SYSTEM: <NONE> : at line 324
+c is 46  .
+TOKEN_DOT: <NONE> : at line 324
+c is 111  o
+TOKEN_OUT: <NONE> : at line 324
+c is 46  .
+TOKEN_DOT: <NONE> : at line 324
+c is 112  p
+TOKEN_PRINTLN: <NONE> : at line 324
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 324
+c is 110  n
+TOKEN_ID: node : at line 324
+c is 46  .
+TOKEN_DOT: <NONE> : at line 324
+c is 71  G
+TOKEN_ID: GetKey : at line 324
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 324
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 324
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 324
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 324
+c is 105  i
+TOKEN_IF: <NONE> : at line 325
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 325
+c is 110  n
+TOKEN_ID: node : at line 325
+c is 46  .
+TOKEN_DOT: <NONE> : at line 325
+c is 71  G
+TOKEN_ID: GetHas_Right : at line 325
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 325
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 325
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 325
+c is 123  {
+TOKEN_LBRACE: <NONE> : at line 325
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 326
+c is 97  a
+TOKEN_ID: auxtree01 : at line 326
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 326
+c is 110  n
+TOKEN_ID: node : at line 326
+c is 46  .
+TOKEN_DOT: <NONE> : at line 326
+c is 71  G
+TOKEN_ID: GetRight : at line 326
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 326
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 326
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 326
+c is 47  /
+TOKEN_COMMEN: <NONE> : at line 327
+c is 110  n
+TOKEN_ID: ntb : at line 327
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 327
+c is 116  t
+TOKEN_THIS: <NONE> : at line 327
+c is 46  .
+TOKEN_DOT: <NONE> : at line 327
+c is 82  R
+TOKEN_ID: RecPrint : at line 327
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 327
+c is 97  a
+TOKEN_ID: auxtree01 : at line 327
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 327
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 327
+c is 110  n
+TOKEN_ID: ntb : at line 328
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 328
+c is 116  t
+TOKEN_THIS: <NONE> : at line 328
+c is 46  .
+TOKEN_DOT: <NONE> : at line 328
+c is 82  R
+TOKEN_ID: RecPrint : at line 328
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 328
+c is 110  n
+TOKEN_ID: node : at line 328
+c is 46  .
+TOKEN_DOT: <NONE> : at line 328
+c is 71  G
+TOKEN_ID: GetRight : at line 328
+c is 40  (
+TOKEN_LPAREN: <NONE> : at line 328
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 328
+c is 41  )
+TOKEN_RPAREN: <NONE> : at line 328
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 328
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 329
+c is 101  e
+TOKEN_ELSE: <NONE> : at line 329
+c is 110  n
+TOKEN_ID: ntb : at line 329
+c is 61  =
+TOKEN_ASSIGN: <NONE> : at line 329
+c is 116  t
+TOKEN_ID: true : at line 329
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 329
+c is 114  r
+TOKEN_RETURN: <NONE> : at line 330
+c is 116  t
+TOKEN_ID: true : at line 330
+c is 59  ;
+TOKEN_SEMI: <NONE> : at line 330
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 331
+c is 125  }
+TOKEN_RBRACE: <NONE> : at line 333
+c is -1  ?
