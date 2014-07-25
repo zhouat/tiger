@@ -499,15 +499,16 @@ public class Parser
 	if(current.kind == Kind.TOKEN_PUBLIC)
 	{
 		eatToken(Kind.TOKEN_PUBLIC);
-		eatToken(Kind.TOKEN_CLASS);
-		eatToken(Kind.TOKEN_ID);
-		eatToken(Kind.TOKEN_LBRACE);
-		
-	    parseMethod();
-	    
-	    eatToken(Kind.TOKEN_RBRACE);
 	}
-	else error();
+	
+	eatToken(Kind.TOKEN_CLASS);
+	eatToken(Kind.TOKEN_ID);
+	eatToken(Kind.TOKEN_LBRACE);
+	
+    parseMethod();
+    
+    eatToken(Kind.TOKEN_RBRACE);
+
   }
 
   // Program -> MainClass ClassDecl*

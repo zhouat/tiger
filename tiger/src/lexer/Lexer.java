@@ -92,7 +92,12 @@ public class Lexer
 	    {
 	    			if('/'==(c=this.pstream.read()))
 	    			{
-	    				return new Token(Kind.TOKEN_COMMEN,line_num);
+	    				while('\n'!=c)
+	    				{
+//	    					System.out.println(c);
+	    					c=this.pstream.read();
+	    				}
+	    				return new Token(Kind.TOKEN_COMMEN,line_num++);
 	    			}
 	    			
 	    			this.pstream.unread(c);
@@ -233,6 +238,11 @@ public class Lexer
 
     try {
       t = this.nextTokenInternal();
+      while(t.kind==Kind.TOKEN_COMMEN)
+      {
+    	  t = this.nextTokenInternal();
+//    	  System.out.println("__zat__token_commen__");
+      }
     } catch (Exception e) {
       e.printStackTrace();
       System.exit(1);
