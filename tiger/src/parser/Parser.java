@@ -34,6 +34,18 @@ public class Parser
       System.exit(1);
     }
   }
+  
+  private void eatToken(Kind kind,String line_info)
+  {
+    if (kind == current.kind)
+      advance();
+    else {
+      System.out.println("Expects: " + kind.toString());
+      System.out.println("But got: " + current.kind.toString());
+      System.out.println(line_info);
+      System.exit(1);
+    }
+  }
 
   private void error()
   {
@@ -73,6 +85,7 @@ public class Parser
   // -> new id ()
   private void parseAtomExp()
   {
+//  	  System.out.println(current.kind);
     switch (current.kind) {
     case TOKEN_LPAREN:
       advance();
@@ -80,11 +93,15 @@ public class Parser
       eatToken(Kind.TOKEN_RPAREN);
       return;
     case TOKEN_NUM:
+//    	System.out.println("here?");
       advance();
       return;
     case TOKEN_TRUE:
       advance();
       return;
+    case TOKEN_FALSE://TMD ¿Ó»õ¡£¡£¡£
+        advance();
+        return;
     case TOKEN_THIS:
       advance();
       return;
@@ -122,6 +139,7 @@ public class Parser
   // -> AtomExp .length
   private void parseNotExp()
   {
+
     parseAtomExp();
     while (current.kind == Kind.TOKEN_DOT || current.kind == Kind.TOKEN_LBRACK) {
       if (current.kind == Kind.TOKEN_DOT) {
@@ -130,11 +148,13 @@ public class Parser
           advance();
           return;
         }
+//        System.out.println("here?");
         eatToken(Kind.TOKEN_ID);
         eatToken(Kind.TOKEN_LPAREN);
         parseExpList();
         eatToken(Kind.TOKEN_RPAREN);
       } else {
+//    	  System.out.println("here?");
         advance();
         parseExp();
         eatToken(Kind.TOKEN_RBRACK);
@@ -215,8 +235,15 @@ public class Parser
     // to parse a statement.
     //new util.Todo();
 
-	//parseVarDecls();  
-	if(current.kind==Kind.TOKEN_IF)
+	//parseVarDecls();
+	while(current.kind==Kind.TOKEN_LBRACE)
+	{
+		eatToken(Kind.TOKEN_LBRACE);
+		parseStatement();
+		eatToken(Kind.TOKEN_RBRACE);
+	}
+	
+	while(current.kind==Kind.TOKEN_IF)
 	{
 		eatToken(Kind.TOKEN_IF);
 		eatToken(Kind.TOKEN_LPAREN);
@@ -226,16 +253,16 @@ public class Parser
 		parseStatement();
 		eatToken(Kind.TOKEN_ELSE);
 		parseStatement();
-		
-	}else if(current.kind==Kind.TOKEN_WHILE)
+	}
+	while(current.kind==Kind.TOKEN_WHILE)
 	{
 		eatToken(Kind.TOKEN_WHILE);
 		eatToken(Kind.TOKEN_LPAREN);
 		parseExp();
 		eatToken(Kind.TOKEN_RPAREN);
 		parseStatement();
-		
-	}else if(current.kind==Kind.TOKEN_SYSTEM)
+	}
+	while(current.kind==Kind.TOKEN_SYSTEM)
 	{
 		eatToken(Kind.TOKEN_SYSTEM);
 		eatToken(Kind.TOKEN_DOT);
@@ -246,9 +273,10 @@ public class Parser
 		parseExp();
 		eatToken(Kind.TOKEN_RPAREN);
 		eatToken(Kind.TOKEN_SEMI);
-		
-	}else if(current.kind==Kind.TOKEN_ID)
+	}
+	while(current.kind==Kind.TOKEN_ID)
 	{
+//		System.out.println("__zat log__here__");
 		eatToken(Kind.TOKEN_ID);
 		
 		if(current.kind==Kind.TOKEN_ASSIGN)
@@ -256,8 +284,7 @@ public class Parser
 			eatToken(Kind.TOKEN_ASSIGN);
 			parseExp();
 			eatToken(Kind.TOKEN_SEMI);
-			return;
-			
+			parseStatement();
 		}
 		// Statement -> { Statement* }
 		  // -> if ( Exp ) Statement else Statement
@@ -265,16 +292,18 @@ public class Parser
 		  // -> System.out.println ( Exp ) ;
 		  // -> id = Exp ;
 		  // -> id [ Exp ]= Exp ;
-		eatToken(Kind.TOKEN_LBRACK);
-		parseExp();
-		eatToken(Kind.TOKEN_RBRACK);
-		eatToken(Kind.TOKEN_ASSIGN);
-		parseExp();
-		eatToken(Kind.TOKEN_SEMI);
-		
-	}else error();
-	  
-	  
+		else{
+			eatToken(Kind.TOKEN_LBRACK);
+			parseExp();
+			eatToken(Kind.TOKEN_RBRACK);
+			eatToken(Kind.TOKEN_ASSIGN);
+			parseExp();
+			eatToken(Kind.TOKEN_SEMI);
+			parseStatement();
+		}
+	}
+//	 System.out.println("error here line 295");
+	 return; 
   }
 
   // Statements -> Statement Statements
@@ -332,7 +361,16 @@ public class Parser
     // to parse the "Type" nonterminal in this method, instead of writing
     // a fresh one.
     parseType();
-    eatToken(Kind.TOKEN_ID);
+    if(current.kind==Kind.TOKEN_ASSIGN)
+    {
+    	eatToken(Kind.TOKEN_ASSIGN);
+    	parseExp();
+//    	System.out.println("__here?__");
+    	eatToken(Kind.TOKEN_SEMI);
+    	return;
+    }
+    	
+    eatToken(Kind.TOKEN_ID,"here error?  348");
     eatToken(Kind.TOKEN_SEMI);
     return;
   }
@@ -375,7 +413,7 @@ public class Parser
     // to parse a method.
     //new util.Todo();
 	
-
+//System.out.println("__here__error?");
 	//public static void main(String[] args)
 	//public static int main(String[] args)
 	eatToken(Kind.TOKEN_PUBLIC);
@@ -391,6 +429,10 @@ public class Parser
 	}else if(current.kind==Kind.TOKEN_VOID)
 	{
 		eatToken(Kind.TOKEN_VOID);
+	}else if(current.kind==Kind.TOKEN_BOOLEAN)
+	{
+		eatToken(Kind.TOKEN_BOOLEAN);
+		
 	}else error();
 	
 	if(current.kind==Kind.TOKEN_MAIN)
@@ -414,17 +456,31 @@ public class Parser
 			eatToken(Kind.TOKEN_ID);
 		}else if(current.kind==Kind.TOKEN_ID)
 		{
+			eatToken(Kind.TOKEN_ID);
 			eatToken(Kind.TOKEN_ARR);
 		}else error();
 		
-	}else if(current.kind!=Kind.TOKEN_RPAREN)
+	}else do
 	{
+		if(current.kind==Kind.TOKEN_RPAREN)
+			break;
+		if(current.kind==Kind.TOKEN_COMMER)
+		{
+			eatToken(Kind.TOKEN_COMMER);
+		}
+		
 		parseType();
 		eatToken(Kind.TOKEN_ID);
-	}
+		
+
+	}while(current.kind==Kind.TOKEN_COMMER);
+	
 	eatToken(Kind.TOKEN_RPAREN);
 	eatToken(Kind.TOKEN_LBRACE);
-	parseVarDecls();  
+	
+
+	parseVarDecls();
+//	System.out.println("___end__?");
 	//public static int main(String[] args)
 	/* {
 	 * 
@@ -467,7 +523,9 @@ public class Parser
       eatToken(Kind.TOKEN_ID);
     }
     eatToken(Kind.TOKEN_LBRACE);
+    /*  hand the vars at the beg of the source file*/
     parseVarDecls();
+    /* hand all of the methods in the source file */
     parseMethodDecls();
     eatToken(Kind.TOKEN_RBRACE);
     return;
@@ -477,6 +535,7 @@ public class Parser
   // ->
   private void parseClassDecls()
   {
+	 /*hand all of the classes in the sourcefile*/ 
     while (current.kind == Kind.TOKEN_CLASS) {
       parseClassDecl();
     }
