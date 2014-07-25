@@ -8,9 +8,11 @@ public class Parser
 {
   Lexer lexer;
   Token current;
+  String fname;
 
   public Parser(String fname, java.io.InputStream fstream)
   {
+	this.fname=fname;
     lexer = new Lexer(fname, fstream);
     current = lexer.nextToken();
   }
@@ -50,6 +52,7 @@ public class Parser
   private void error()
   {
     System.out.println("Syntax error: compilation aborting...\n");
+    System.out.println("Error info:  \n\t"+fname+".java    at   line"+current.lineNum+"\n");
     System.exit(1);
     return;
   }
