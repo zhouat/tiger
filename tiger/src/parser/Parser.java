@@ -347,6 +347,12 @@ public class Parser
 	}else if(current.kind==Kind.TOKEN_ID)
 	{
 		eatToken(Kind.TOKEN_ID);
+		if(current.kind==Kind.TOKEN_LBRACK)
+		{
+			eatToken(Kind.TOKEN_LBRACK);
+			eatToken(Kind.TOKEN_NUM);
+			eatToken(Kind.TOKEN_RBRACK);
+		}
 		return ;
 		
 	}
@@ -370,7 +376,7 @@ public class Parser
     	return;
     }
     	
-    eatToken(Kind.TOKEN_ID,"here error?  348");
+    eatToken(Kind.TOKEN_ID,"here error?  373");
     eatToken(Kind.TOKEN_SEMI);
     return;
   }
@@ -422,18 +428,13 @@ public class Parser
 		eatToken(Kind.TOKEN_STATIC);
 	}	
 	
-	if(current.kind==Kind.TOKEN_INT)
-	{
-		eatToken(Kind.TOKEN_INT);
-		
-	}else if(current.kind==Kind.TOKEN_VOID)
+	if(current.kind==Kind.TOKEN_VOID)
 	{
 		eatToken(Kind.TOKEN_VOID);
-	}else if(current.kind==Kind.TOKEN_BOOLEAN)
+	}else 
 	{
-		eatToken(Kind.TOKEN_BOOLEAN);
-		
-	}else error();
+		parseType();
+	}
 	
 	if(current.kind==Kind.TOKEN_MAIN)
 	{
