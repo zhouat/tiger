@@ -51,6 +51,7 @@ public class Token
 	    TOKEN_OUT, // "out"
 	    	TOKEN_PRINT,//"print"
 	    TOKEN_PRINTLN, // "println"
+	    TOKEN_PRIVATE, // "private"
 	    TOKEN_PUBLIC, // "public"
 	    TOKEN_RBRACE, // "}"
 	    TOKEN_RBRACK, // "]"

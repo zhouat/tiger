@@ -36,6 +36,7 @@ public class Lexer
 		  put(Kind.TOKEN_PRINT,"print");
 		  put(Kind.TOKEN_PRINTLN,"println");
 		  put(Kind.TOKEN_PUBLIC,"public");
+		  put(Kind.TOKEN_PRIVATE,"private");
 		  put(Kind.TOKEN_RETURN,"return");
 		  put(Kind.TOKEN_STRING,"String");
 		  put(Kind.TOKEN_STATIC,"static");
