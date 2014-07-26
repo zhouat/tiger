@@ -1,13 +1,13 @@
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.io.PushbackInputStream;
 
 import lexer.Lexer;
 import lexer.Token;
 import lexer.Token.Kind;
 
 import control.CommandLine;
-
 import parser.Parser;
 
 public class Tiger
@@ -16,6 +16,7 @@ public class Tiger
   {
     InputStream fstream;
     Parser parser;
+    PushbackInputStream pstream;
 
     // ///////////////////////////////////////////////////////
     // handle command line arguments
@@ -47,8 +48,10 @@ public class Tiger
         Lexer lexer = new Lexer(fname, fstream);
         Token token = lexer.nextToken();
         while (token.kind != Kind.TOKEN_EOF) {
-          System.out.println(token.toString());
-          token = lexer.nextToken();
+        pstream=new PushbackInputStream(fstream);
+
+        System.out.println(token.toString());
+        token = lexer.nextToken();
         }
         fstream.close();
       } catch (Exception e) {
@@ -67,6 +70,7 @@ public class Tiger
       parser = new Parser(fname, fstream);
 
       theAst = parser.parse();
+      parser.parse();
 
       fstream.close();
     } catch (Exception e) {

@@ -11,7 +11,8 @@ public class Control
   
   // ast
   public static boolean dumpAst = false;
-
+  
+  // lexer and parser
   // elaborator
   public static boolean elabClassTable = false;
   public static boolean elabMethodTable = false;

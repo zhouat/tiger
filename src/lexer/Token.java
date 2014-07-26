@@ -54,6 +54,24 @@ public class Token
     TOKEN_TRUE, // "true"
     TOKEN_VOID, // "void"
     TOKEN_WHILE, // "while"
+	TOKEN_ARR,//"[]"    
+	TOKEN_COMMEN,// "//"
+	TOKEN_DIV,//"/"
+	TOKEN_DO,//"do"
+	TOKEN_EQ,//"=="    
+	TOKEN_FOR,//"for"    
+	TOKEN_GE,//">="
+	TOKEN_GT,//">"    
+	TOKEN_LE,//"<="    
+	TOKEN_NEQ,//"!="    
+	// "out" is not a Java key word, but we treat it as
+	// a MiniJava keyword, which will make the
+	// compilation a little easier. Similar cases apply
+	// for "println", "System" and "String".
+	TOKEN_OR,//"||"
+	TOKEN_PRINT,//"print"
+	TOKEN_PRIVATE, // "private"
+	TOKEN_THEN,//"then"    
   }
 
   public Kind kind; // kind of the token
