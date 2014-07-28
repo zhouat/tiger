@@ -22,7 +22,6 @@ public class Tiger
     // handle command line arguments
     CommandLine cmd = new CommandLine();
     String fname = cmd.scan(args);
-
     // /////////////////////////////////////////////////////
     // to test the pretty printer on the "test/Fac.java" program
     if (control.Control.testFac) {
@@ -44,14 +43,16 @@ public class Tiger
     if (control.Control.testlexer) {
       System.out.println("Testing the lexer. All tokens:");
       try {
-        fstream = new BufferedInputStream(new FileInputStream(fname));
-        Lexer lexer = new Lexer(fname, fstream);
-        Token token = lexer.nextToken();
+    	  
+		fstream = new BufferedInputStream(new FileInputStream(fname));
+		pstream=new PushbackInputStream(fstream);
+		Lexer lexer = new Lexer(fname, pstream);
+		Token token = lexer.nextToken();
+          
         while (token.kind != Kind.TOKEN_EOF) {
-        pstream=new PushbackInputStream(fstream);
-
-        System.out.println(token.toString());
-        token = lexer.nextToken();
+	        pstream=new PushbackInputStream(fstream);
+	        System.out.println(token.toString());
+	        token = lexer.nextToken();
         }
         fstream.close();
       } catch (Exception e) {
@@ -70,7 +71,6 @@ public class Tiger
       parser = new Parser(fname, fstream);
 
       theAst = parser.parse();
-      parser.parse();
 
       fstream.close();
     } catch (Exception e) {

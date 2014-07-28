@@ -44,6 +44,10 @@ public class PrettyPrintVisitor implements Visitor
     // Lab2, exercise4: filling in missing code.
     // Similar for other methods with empty bodies.
     // Your code here:
+	e.left.accept(this);
+	this.say(" + ");
+	e.right.accept(this);
+	  
   }
 
   @Override
@@ -61,9 +65,11 @@ public class PrettyPrintVisitor implements Visitor
   {
     e.exp.accept(this);
     this.say("." + e.id + "(");
+    int num=0;
     for (ast.exp.T x : e.args) {
+      num++;
+      if(num>1)    this.say(", ");
       x.accept(this);
-      this.say(", ");
     }
     this.say(")");
     return;
@@ -154,7 +160,7 @@ public class PrettyPrintVisitor implements Visitor
     this.printSpaces();
     this.say(s.id + " = ");
     s.exp.accept(this);
-    this.say(";");
+    this.say(";\n");
     return;
   }
 
@@ -166,6 +172,12 @@ public class PrettyPrintVisitor implements Visitor
   @Override
   public void visit(ast.stm.Block s)
   {
+	  for (ast.stm.T x : s.stms) {
+		  this.indent();
+		  x.accept(this);
+		  this.unIndent();
+		 // System.out.println("\n"+x);
+	  }
   }
 
   @Override
@@ -201,6 +213,15 @@ public class PrettyPrintVisitor implements Visitor
   @Override
   public void visit(ast.stm.While s)
   {
+	  this.printSpaces();
+	  this.say("while(");
+	  s.condition.accept(this);
+	  this.sayln(")");
+	  this.printSpaces();
+	  this.sayln("{");
+	  s.body.accept(this);
+	  this.printSpaces();
+	  this.sayln("}");
   }
 
   // type
@@ -238,10 +259,14 @@ public class PrettyPrintVisitor implements Visitor
     this.say("  public ");
     m.retType.accept(this);
     this.say(" " + m.id + "(");
+    int num=0;
     for (ast.dec.T d : m.formals) {
+      num++;
+      	if(num>1)this.say(", ");
       ast.dec.Dec dec = (ast.dec.Dec) d;
       dec.type.accept(this);
-      this.say(" " + dec.id + ", ");
+      this.say(" " + dec.id );
+
     }
     this.sayln(")");
     this.sayln("  {");

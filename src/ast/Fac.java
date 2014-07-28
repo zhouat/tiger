@@ -17,35 +17,145 @@ public class Fac
    */
 
   // // main class: "Factorial"
-  static ast.mainClass.MainClass factorial = new ast.mainClass.MainClass(
-      "Factorial", "a", new ast.stm.Print(new ast.exp.Call(
-          new ast.exp.NewObject("Fac"), "ComputeFac",
-          new util.Flist<ast.exp.T>().addAll(new ast.exp.Num(10)))));
+  static ast.mainClass.MainClass factorial = new ast.mainClass.MainClass
+ /*		id arg  stm		*/
+  (
+      "Factorial", 
+      "a", 
+      new ast.stm.Print
+      (
+		/*  	new ast.exp.Call(exp, id, args) 	*/
+	     new ast.exp.Call
+	    (
+             new ast.exp.NewObject("Fac"), 
+             "ComputeFac",
+             new util.Flist<ast.exp.T>().addAll(new ast.exp.Num(10))
+         )
+      )
+  );
 
   // // class "Fac"
-  static ast.classs.Class fac = new ast.classs.Class("F", null,
+  static ast.classs.Class fac = new ast.classs.Class
+  (
+	  "Fac", 
+	  null,
       new util.Flist<ast.dec.T>().addAll(),
-      new util.Flist<ast.method.T>().addAll(new ast.method.Method(
-          new ast.type.Int(), "ComputeFac", new util.Flist<ast.dec.T>()
-              .addAll(new ast.dec.Dec(new ast.type.Int(), "num")),
-          new util.Flist<ast.dec.T>().addAll(new ast.dec.Dec(
-              new ast.type.Int(), "num_aux")), new util.Flist<ast.stm.T>()
-              .addAll(new ast.stm.If(new ast.exp.Lt(new ast.exp.Id("num"),
-                  new ast.exp.Num(1)), new ast.stm.Assign("num_aux",
-                  new ast.exp.Num(1)), new ast.stm.Assign("num_aux",
-                  new ast.exp.Times(new ast.exp.Id("num"), new ast.exp.Call(
-                      new ast.exp.This(), "ComputeFac",
-                      new util.Flist<ast.exp.T>().addAll(new ast.exp.Sub(
-                          new ast.exp.Id("num"), new ast.exp.Num(1)))))))),
-          new ast.exp.Id("num_aux"))));
+      new util.Flist<ast.method.T>().addAll
+      (
+       new ast.method.Method
+        (
+          new ast.type.Int(), 
+          "ComputeFac", 
+          new util.Flist<ast.dec.T>().addAll(new ast.dec.Dec(new ast.type.Int(), "num")),
+          new util.Flist<ast.dec.T>().addAll(new ast.dec.Dec(new ast.type.Int(), "num_aux")),
+          new util.Flist<ast.stm.T>().addAll
+          (
+            new ast.stm.If
+             (
+          	    new ast.exp.Lt(new ast.exp.Id("num"),new ast.exp.Num(1)), 
+          		new ast.stm.Assign("num_aux",new ast.exp.Num(1)), 
+          	    new ast.stm.Assign
+          		(
+          			"num_aux",
+          			new ast.exp.Times
+          			(
+          				new ast.exp.Id("num"),
+          				/*  	new ast.exp.Call(exp, id, args) 	*/
+          				new ast.exp.Call
+          				(
+          					new ast.exp.This(), 
+          					"ComputeFac",
+          					new util.Flist<ast.exp.T>().addAll
+          					(
+          						new ast.exp.Sub
+          						(
+          						    new ast.exp.Id("num"), 
+          							new ast.exp.Num(1)				
+          						)
+          					)
+          				)
+          			)
+          		 )
+          	  )
+           ),
+         new ast.exp.Id("num_aux")
+        )
+       )
+    );
 
-  // program
-  public static ast.program.Program prog = new ast.program.Program(factorial,
-      new util.Flist<ast.classs.T>().addAll(fac));
 
   // Lab2, exercise 2: you should write some code to
   // represent the program "test/Sum.java".
   // Your code here:
+  static ast.mainClass.MainClass Sum=new ast.mainClass.MainClass
+		  /*	Id,arg,stm		*/
+		  ("Sum", 
+		   "a", 
+		   new ast.stm.Print
+		   (
+				   new ast.exp.Call
+				   (
+				   /*	exp, id, args	*/
+				   new ast.exp.NewObject("Doit"),
+				   "doit",
+				   new util.Flist().addAll(new ast.exp.Num(101))
+				   )
+		   )
+		  );
   
+static ast.classs.Class Doit=new ast.classs.Class
+  /*	id, extendss, decs, methods		*/
+  (
+	  "Doit", 
+	  null, 
+      new util.Flist<ast.dec.T>().addAll(), 
+	  new util.Flist<ast.method.T>().addAll
+	  (
+		  //new ast.method.Method(retType, id, formals, locals, stms, retExp)
+		  new ast.method.Method(
+				  new ast.type.Int(), 
+				  "doit", 
+				  new util.Flist<ast.dec.T>().addAll(new ast.dec.Dec(new ast.type.Int(),"n")), 
+				  new util.Flist<ast.dec.T>().addAll
+				  (
+						  new ast.dec.Dec(new ast.type.Int(),"sum"),
+						  new ast.dec.Dec(new ast.type.Int(), "i")
+				  ),
+				  new util.Flist<ast.stm.T>().addAll
+				  (
+						  new ast.stm.Assign("i", new ast.exp.Num(0)),
+						  new ast.stm.Assign("sum", new ast.exp.Num(0)),
+						  new ast.stm.While
+						  (
+								  new ast.exp.Lt
+								  (
+									new ast.exp.Id("i"), 
+									new ast.exp.Id("n")
+								  ), 
+							      new ast.stm.Block
+							      (
+							    	 new util.Flist<ast.stm.T>().addAll
+							    	  (
+							    			  new ast.stm.Assign("sum", new ast.exp.Add(new ast.exp.Id("sum"), new ast.exp.Id("i"))),
+							    			  new ast.stm.Assign("i", new ast.exp.Add(new ast.exp.Id("i"), new ast.exp.Num(1)))
+							    	  )
+							      )
+						  )
+						 
+				  ), 
+				  new ast.exp.Id("sum")
+		 )
+	 )
+ );
   
+  // program   new ast.program.Program(mainClass, classes)
+   /*	  new ast.classs.Class(id, extendss, decs, methods)		*/
+public static ast.program.Program prog = new ast.program.Program
+		  (factorial, 
+		   new util.Flist<ast.classs.T>().addAll
+		   		   (
+		   				   fac,Doit
+				   )
+		  );
 }
+
