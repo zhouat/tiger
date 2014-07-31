@@ -80,7 +80,7 @@ public class Lexer
       c = this.fstream.read();
     }
     
-    System.out.println("c is "+c+"  "+(char)c);
+    System.out.println("c is "+c+"  "+(char)c+"   line_num  is  "+line_num);
     
     if (-1 == c)
       return new Token(Kind.TOKEN_EOF, line_num);

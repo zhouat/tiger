@@ -3,3 +3,5 @@
 /control/
 /elaborator/
 /lexer/
+/parser/
+/util/

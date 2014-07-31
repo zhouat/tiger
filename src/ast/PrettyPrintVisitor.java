@@ -53,11 +53,19 @@ public class PrettyPrintVisitor implements Visitor
   @Override
   public void visit(ast.exp.And e)
   {
+	  e.left.accept(this);
+	  this.say("&&");
+	  e.right.accept(this);
   }
 
   @Override
   public void visit(ast.exp.ArraySelect e)
   {
+	  e.array.accept(this);
+	  this.say("[");
+	  e.index.accept(this);
+	  this.say("]");
+	  
   }
 
   @Override
@@ -78,6 +86,7 @@ public class PrettyPrintVisitor implements Visitor
   @Override
   public void visit(ast.exp.False e)
   {
+	  this.say("false");
   }
 
   @Override
@@ -89,6 +98,8 @@ public class PrettyPrintVisitor implements Visitor
   @Override
   public void visit(ast.exp.Length e)
   {
+	  e.array.accept(this);		
+	  this.say(".length");
   }
 
   @Override
@@ -103,6 +114,9 @@ public class PrettyPrintVisitor implements Visitor
   @Override
   public void visit(ast.exp.NewIntArray e)
   {
+	  this.say("new int[");
+	  e.exp.accept(this);
+	  this.say("]");
   }
 
   @Override
@@ -115,6 +129,9 @@ public class PrettyPrintVisitor implements Visitor
   @Override
   public void visit(ast.exp.Not e)
   {
+	  this.say("!(");
+	  e.exp.accept(this);
+	  this.say(")");
   }
 
   @Override
@@ -151,6 +168,7 @@ public class PrettyPrintVisitor implements Visitor
   @Override
   public void visit(ast.exp.True e)
   {
+	  
   }
 
   // statements
@@ -228,6 +246,7 @@ public class PrettyPrintVisitor implements Visitor
   @Override
   public void visit(ast.type.Boolean t)
   {
+	  this.say("boolean");
   }
 
   @Override
@@ -244,6 +263,7 @@ public class PrettyPrintVisitor implements Visitor
   @Override
   public void visit(ast.type.IntArray t)
   {
+	  this.say("int[]");
   }
 
   // dec
