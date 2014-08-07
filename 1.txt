@@ -1,0 +1,1063 @@
+c is 99  c   line_num  is  1
+c is 66  B   line_num  is  1
+c is 123  {   line_num  is  1
+c is 112  p   line_num  is  2
+c is 115  s   line_num  is  2
+c is 118  v   line_num  is  2
+c is 109  m   line_num  is  2
+c is 40  (   line_num  is  2
+c is 83  S   line_num  is  2
+c is 91  [   line_num  is  2
+c is 97  a   line_num  is  2
+c is 41  )   line_num  is  2
+c is 123  {   line_num  is  2
+c is 83  S   line_num  is  3
+c is 46  .   line_num  is  3
+c is 111  o   line_num  is  3
+c is 46  .   line_num  is  3
+c is 112  p   line_num  is  3
+c is 40  (   line_num  is  3
+c is 110  n   line_num  is  3
+c is 66  B   line_num  is  3
+c is 40  (   line_num  is  3
+c is 41  )   line_num  is  3
+c is 46  .   line_num  is  3
+c is 83  S   line_num  is  3
+c is 40  (   line_num  is  3
+c is 50  2   line_num  is  3
+c is 41  )   line_num  is  3
+c is 41  )   line_num  is  3
+c is 59  ;   line_num  is  3
+c is 125  }   line_num  is  4
+ast.stm.Print@8a0544
+c is 125  }   line_num  is  5
+c is 47  /   line_num  is  6
+c is 47  /   line_num  is  7
+c is 47  /   line_num  is  8
+c is 99  c   line_num  is  10
+c is 66  B   line_num  is  10
+c is 123  {   line_num  is  10
+c is 105  i   line_num  is  11
+c is 91  [   line_num  is  11
+c is 110  n   line_num  is  11
+c is 59  ;   line_num  is  11
+c is 105  i   line_num  is  12
+c is 115  s   line_num  is  12
+c is 59  ;   line_num  is  12
+c is 47  /   line_num  is  14
+c is 47  /   line_num  is  15
+c is 112  p   line_num  is  16
+c is 105  i   line_num  is  16
+c is 83  S   line_num  is  16
+c is 40  (   line_num  is  16
+c is 105  i   line_num  is  16
+c is 115  s   line_num  is  16
+c is 41  )   line_num  is  16
+c is 123  {   line_num  is  16
+c is 105  i   line_num  is  17
+c is 97  a   line_num  is  17
+c is 59  ;   line_num  is  17
+c is 105  i   line_num  is  18
+c is 97  a   line_num  is  18
+c is 59  ;   line_num  is  18
+c is 97  a   line_num  is  19
+c is 61  =   line_num  is  19
+c is 116  t   line_num  is  19
+c is 46  .   line_num  is  19
+c is 73  I   line_num  is  19
+c is 40  (   line_num  is  19
+c is 115  s   line_num  is  19
+c is 41  )   line_num  is  19
+c is 59  ;   line_num  is  19
+c is 97  a   line_num  is  20
+ast.stm.Assign@15fc40c
+c is 61  =   line_num  is  20
+c is 116  t   line_num  is  20
+c is 46  .   line_num  is  20
+c is 80  P   line_num  is  20
+c is 40  (   line_num  is  20
+c is 41  )   line_num  is  20
+c is 59  ;   line_num  is  20
+c is 105  i   line_num  is  22
+ast.stm.Assign@401369
+c is 40  (   line_num  is  22
+c is 116  t   line_num  is  22
+c is 46  .   line_num  is  22
+c is 83  S   line_num  is  22
+c is 40  (   line_num  is  22
+c is 56  8   line_num  is  22
+c is 41  )   line_num  is  22
+c is 41  )   line_num  is  22
+c is 83  S   line_num  is  22
+c is 46  .   line_num  is  22
+c is 111  o   line_num  is  22
+c is 46  .   line_num  is  22
+c is 112  p   line_num  is  22
+c is 40  (   line_num  is  22
+c is 49  1   line_num  is  22
+c is 41  )   line_num  is  22
+c is 59  ;   line_num  is  22
+c is 101  e   line_num  is  23
+c is 83  S   line_num  is  23
+c is 46  .   line_num  is  23
+c is 111  o   line_num  is  23
+c is 46  .   line_num  is  23
+c is 112  p   line_num  is  23
+c is 40  (   line_num  is  23
+c is 48  0   line_num  is  23
+c is 41  )   line_num  is  23
+c is 59  ;   line_num  is  23
+c is 105  i   line_num  is  24
+ast.stm.If@ba5bdb
+c is 40  (   line_num  is  24
+c is 116  t   line_num  is  24
+c is 46  .   line_num  is  24
+c is 83  S   line_num  is  24
+c is 40  (   line_num  is  24
+c is 49  1   line_num  is  24
+c is 41  )   line_num  is  24
+c is 41  )   line_num  is  24
+c is 83  S   line_num  is  24
+c is 46  .   line_num  is  24
+c is 111  o   line_num  is  24
+c is 46  .   line_num  is  24
+c is 112  p   line_num  is  24
+c is 40  (   line_num  is  24
+c is 49  1   line_num  is  24
+c is 41  )   line_num  is  24
+c is 59  ;   line_num  is  24
+c is 101  e   line_num  is  25
+c is 83  S   line_num  is  25
+c is 46  .   line_num  is  25
+c is 111  o   line_num  is  25
+c is 46  .   line_num  is  25
+c is 112  p   line_num  is  25
+c is 40  (   line_num  is  25
+c is 48  0   line_num  is  25
+c is 41  )   line_num  is  25
+c is 59  ;   line_num  is  25
+c is 105  i   line_num  is  26
+ast.stm.If@e49dcd
+c is 40  (   line_num  is  26
+c is 116  t   line_num  is  26
+c is 46  .   line_num  is  26
+c is 83  S   line_num  is  26
+c is 40  (   line_num  is  26
+c is 50  2   line_num  is  26
+c is 41  )   line_num  is  26
+c is 41  )   line_num  is  26
+c is 83  S   line_num  is  26
+c is 46  .   line_num  is  26
+c is 111  o   line_num  is  26
+c is 46  .   line_num  is  26
+c is 112  p   line_num  is  26
+c is 40  (   line_num  is  26
+c is 49  1   line_num  is  26
+c is 41  )   line_num  is  26
+c is 59  ;   line_num  is  26
+c is 101  e   line_num  is  27
+c is 83  S   line_num  is  27
+c is 46  .   line_num  is  27
+c is 111  o   line_num  is  27
+c is 46  .   line_num  is  27
+c is 112  p   line_num  is  27
+c is 40  (   line_num  is  27
+c is 48  0   line_num  is  27
+c is 41  )   line_num  is  27
+c is 59  ;   line_num  is  27
+c is 105  i   line_num  is  28
+ast.stm.If@1343ed0
+c is 40  (   line_num  is  28
+c is 116  t   line_num  is  28
+c is 46  .   line_num  is  28
+c is 83  S   line_num  is  28
+c is 40  (   line_num  is  28
+c is 50  2   line_num  is  28
+c is 41  )   line_num  is  28
+c is 41  )   line_num  is  28
+c is 83  S   line_num  is  28
+c is 46  .   line_num  is  28
+c is 111  o   line_num  is  28
+c is 46  .   line_num  is  28
+c is 112  p   line_num  is  28
+c is 40  (   line_num  is  28
+c is 49  1   line_num  is  28
+c is 41  )   line_num  is  28
+c is 59  ;   line_num  is  28
+c is 101  e   line_num  is  29
+c is 83  S   line_num  is  29
+c is 46  .   line_num  is  29
+c is 111  o   line_num  is  29
+c is 46  .   line_num  is  29
+c is 112  p   line_num  is  29
+c is 40  (   line_num  is  29
+c is 48  0   line_num  is  29
+c is 41  )   line_num  is  29
+c is 59  ;   line_num  is  29
+c is 105  i   line_num  is  30
+ast.stm.If@107f45d
+c is 40  (   line_num  is  30
+c is 116  t   line_num  is  30
+c is 46  .   line_num  is  30
+c is 83  S   line_num  is  30
+c is 40  (   line_num  is  30
+c is 51  3   line_num  is  30
+c is 41  )   line_num  is  30
+c is 41  )   line_num  is  30
+c is 83  S   line_num  is  30
+c is 46  .   line_num  is  30
+c is 111  o   line_num  is  30
+c is 46  .   line_num  is  30
+c is 112  p   line_num  is  30
+c is 40  (   line_num  is  30
+c is 49  1   line_num  is  30
+c is 41  )   line_num  is  30
+c is 59  ;   line_num  is  30
+c is 101  e   line_num  is  31
+c is 83  S   line_num  is  31
+c is 46  .   line_num  is  31
+c is 111  o   line_num  is  31
+c is 46  .   line_num  is  31
+c is 112  p   line_num  is  31
+c is 40  (   line_num  is  31
+c is 48  0   line_num  is  31
+c is 41  )   line_num  is  31
+c is 59  ;   line_num  is  31
+c is 105  i   line_num  is  32
+ast.stm.If@13c0b53
+c is 40  (   line_num  is  32
+c is 116  t   line_num  is  32
+c is 46  .   line_num  is  32
+c is 83  S   line_num  is  32
+c is 40  (   line_num  is  32
+c is 51  3   line_num  is  32
+c is 41  )   line_num  is  32
+c is 41  )   line_num  is  32
+c is 83  S   line_num  is  32
+c is 46  .   line_num  is  32
+c is 111  o   line_num  is  32
+c is 46  .   line_num  is  32
+c is 112  p   line_num  is  32
+c is 40  (   line_num  is  32
+c is 49  1   line_num  is  32
+c is 41  )   line_num  is  32
+c is 59  ;   line_num  is  32
+c is 101  e   line_num  is  33
+c is 83  S   line_num  is  33
+c is 46  .   line_num  is  33
+c is 111  o   line_num  is  33
+c is 46  .   line_num  is  33
+c is 112  p   line_num  is  33
+c is 40  (   line_num  is  33
+c is 48  0   line_num  is  33
+c is 41  )   line_num  is  33
+c is 59  ;   line_num  is  33
+c is 105  i   line_num  is  34
+ast.stm.If@10b9279
+c is 40  (   line_num  is  34
+c is 116  t   line_num  is  34
+c is 46  .   line_num  is  34
+c is 83  S   line_num  is  34
+c is 40  (   line_num  is  34
+c is 51  3   line_num  is  34
+c is 41  )   line_num  is  34
+c is 41  )   line_num  is  34
+c is 83  S   line_num  is  34
+c is 46  .   line_num  is  34
+c is 111  o   line_num  is  34
+c is 46  .   line_num  is  34
+c is 112  p   line_num  is  34
+c is 40  (   line_num  is  34
+c is 49  1   line_num  is  34
+c is 41  )   line_num  is  34
+c is 59  ;   line_num  is  34
+c is 101  e   line_num  is  35
+c is 83  S   line_num  is  35
+c is 46  .   line_num  is  35
+c is 111  o   line_num  is  35
+c is 46  .   line_num  is  35
+c is 112  p   line_num  is  35
+c is 40  (   line_num  is  35
+c is 48  0   line_num  is  35
+c is 41  )   line_num  is  35
+c is 59  ;   line_num  is  35
+c is 105  i   line_num  is  36
+ast.stm.If@bd6a5f
+c is 40  (   line_num  is  36
+c is 116  t   line_num  is  36
+c is 46  .   line_num  is  36
+c is 83  S   line_num  is  36
+c is 40  (   line_num  is  36
+c is 53  5   line_num  is  36
+c is 41  )   line_num  is  36
+c is 41  )   line_num  is  36
+c is 83  S   line_num  is  36
+c is 46  .   line_num  is  36
+c is 111  o   line_num  is  36
+c is 46  .   line_num  is  36
+c is 112  p   line_num  is  36
+c is 40  (   line_num  is  36
+c is 49  1   line_num  is  36
+c is 41  )   line_num  is  36
+c is 59  ;   line_num  is  36
+c is 101  e   line_num  is  37
+c is 83  S   line_num  is  37
+c is 46  .   line_num  is  37
+c is 111  o   line_num  is  37
+c is 46  .   line_num  is  37
+c is 112  p   line_num  is  37
+c is 40  (   line_num  is  37
+c is 48  0   line_num  is  37
+c is 41  )   line_num  is  37
+c is 59  ;   line_num  is  37
+c is 114  r   line_num  is  39
+ast.stm.If@192a848
+c is 57  9   line_num  is  39
+c is 59  ;   line_num  is  39
+c is 125  }   line_num  is  40
+c is 47  /   line_num  is  43
+c is 47  /   line_num  is  44
+c is 112  p   line_num  is  45
+c is 98  b   line_num  is  45
+c is 83  S   line_num  is  45
+c is 40  (   line_num  is  45
+c is 105  i   line_num  is  45
+c is 110  n   line_num  is  45
+c is 41  )   line_num  is  45
+c is 123  {   line_num  is  45
+c is 98  b   line_num  is  46
+c is 98  b   line_num  is  46
+c is 59  ;   line_num  is  46
+c is 105  i   line_num  is  47
+c is 114  r   line_num  is  47
+c is 59  ;   line_num  is  47
+c is 105  i   line_num  is  48
+c is 108  l   line_num  is  48
+c is 59  ;   line_num  is  48
+c is 98  b   line_num  is  49
+c is 118  v   line_num  is  49
+c is 59  ;   line_num  is  49
+c is 105  i   line_num  is  50
+c is 109  m   line_num  is  50
+c is 59  ;   line_num  is  50
+c is 105  i   line_num  is  51
+c is 97  a   line_num  is  51
+c is 59  ;   line_num  is  51
+c is 105  i   line_num  is  52
+c is 110  n   line_num  is  52
+c is 59  ;   line_num  is  52
+c is 97  a   line_num  is  54
+c is 61  =   line_num  is  54
+c is 48  0   line_num  is  54
+c is 59  ;   line_num  is  54
+c is 98  b   line_num  is  55
+ast.stm.Assign@16614e7
+c is 61  =   line_num  is  55
+c is 102  f   line_num  is  55
+c is 59  ;   line_num  is  55
+c is 114  r   line_num  is  56
+ast.stm.Assign@e66f56
+c is 61  =   line_num  is  56
+c is 110  n   line_num  is  56
+c is 46  .   line_num  is  56
+c is 108  l   line_num  is  56
+c is 59  ;   line_num  is  56
+c is 114  r   line_num  is  57
+ast.stm.Assign@979e8b
+c is 61  =   line_num  is  57
+c is 114  r   line_num  is  57
+c is 45  -   line_num  is  57
+c is 49  1   line_num  is  57
+c is 59  ;   line_num  is  57
+c is 108  l   line_num  is  58
+ast.stm.Assign@29ce8c
+c is 61  =   line_num  is  58
+c is 48  0   line_num  is  58
+c is 59  ;   line_num  is  58
+c is 118  v   line_num  is  59
+ast.stm.Assign@b754b2
+c is 61  =   line_num  is  59
+c is 116  t   line_num  is  59
+c is 59  ;   line_num  is  59
+c is 119  w   line_num  is  60
+ast.stm.Assign@197bb7
+c is 40  (   line_num  is  60
+c is 118  v   line_num  is  60
+c is 41  )   line_num  is  60
+c is 123  {   line_num  is  60
+c is 109  m   line_num  is  61
+c is 61  =   line_num  is  61
+c is 108  l   line_num  is  61
+c is 43  +   line_num  is  61
+c is 114  r   line_num  is  61
+c is 59  ;   line_num  is  61
+c is 109  m   line_num  is  62
+c is 61  =   line_num  is  62
+c is 116  t   line_num  is  62
+c is 46  .   line_num  is  62
+c is 68  D   line_num  is  62
+c is 40  (   line_num  is  62
+c is 109  m   line_num  is  62
+c is 41  )   line_num  is  62
+c is 59  ;   line_num  is  62
+c is 97  a   line_num  is  63
+c is 61  =   line_num  is  63
+c is 110  n   line_num  is  63
+c is 91  [   line_num  is  63
+c is 109  m   line_num  is  63
+c is 93  ]   line_num  is  63
+c is 59  ;   line_num  is  63
+c is 105  i   line_num  is  64
+c is 40  (   line_num  is  64
+c is 110  n   line_num  is  64
+c is 60  <   line_num  is  64
+c is 97  a   line_num  is  64
+c is 41  )   line_num  is  64
+c is 114  r   line_num  is  64
+c is 61  =   line_num  is  64
+c is 109  m   line_num  is  64
+c is 45  -   line_num  is  64
+c is 49  1   line_num  is  64
+c is 59  ;   line_num  is  64
+c is 101  e   line_num  is  65
+c is 108  l   line_num  is  65
+c is 61  =   line_num  is  65
+c is 109  m   line_num  is  65
+c is 43  +   line_num  is  65
+c is 49  1   line_num  is  65
+c is 59  ;   line_num  is  65
+c is 105  i   line_num  is  66
+c is 40  (   line_num  is  66
+c is 116  t   line_num  is  66
+c is 46  .   line_num  is  66
+c is 67  C   line_num  is  66
+c is 40  (   line_num  is  66
+c is 97  a   line_num  is  66
+c is 44  ,   line_num  is  66
+c is 110  n   line_num  is  66
+c is 41  )   line_num  is  66
+c is 41  )   line_num  is  66
+c is 118  v   line_num  is  66
+c is 61  =   line_num  is  66
+c is 102  f   line_num  is  66
+c is 59  ;   line_num  is  66
+c is 101  e   line_num  is  67
+c is 118  v   line_num  is  67
+c is 61  =   line_num  is  67
+c is 116  t   line_num  is  67
+c is 59  ;   line_num  is  67
+c is 105  i   line_num  is  68
+c is 40  (   line_num  is  68
+c is 114  r   line_num  is  68
+c is 60  <   line_num  is  68
+c is 108  l   line_num  is  68
+c is 41  )   line_num  is  68
+c is 118  v   line_num  is  68
+c is 61  =   line_num  is  68
+c is 102  f   line_num  is  68
+c is 59  ;   line_num  is  68
+c is 101  e   line_num  is  69
+c is 110  n   line_num  is  69
+c is 61  =   line_num  is  69
+c is 48  0   line_num  is  69
+c is 59  ;   line_num  is  69
+c is 125  }   line_num  is  70
+ast.stm.While@1094d48
+c is 105  i   line_num  is  72
+c is 40  (   line_num  is  72
+c is 116  t   line_num  is  72
+c is 46  .   line_num  is  72
+c is 67  C   line_num  is  72
+c is 40  (   line_num  is  72
+c is 97  a   line_num  is  72
+c is 44  ,   line_num  is  72
+c is 110  n   line_num  is  72
+c is 41  )   line_num  is  72
+c is 41  )   line_num  is  72
+c is 98  b   line_num  is  72
+c is 61  =   line_num  is  72
+c is 116  t   line_num  is  72
+c is 59  ;   line_num  is  72
+c is 101  e   line_num  is  73
+c is 98  b   line_num  is  73
+c is 61  =   line_num  is  73
+c is 102  f   line_num  is  73
+c is 59  ;   line_num  is  73
+c is 114  r   line_num  is  74
+ast.stm.If@1b0bdc8
+c is 98  b   line_num  is  74
+c is 59  ;   line_num  is  74
+c is 125  }   line_num  is  75
+c is 47  /   line_num  is  77
+c is 47  /   line_num  is  78
+c is 112  p   line_num  is  79
+c is 105  i   line_num  is  79
+c is 68  D   line_num  is  79
+c is 40  (   line_num  is  79
+c is 105  i   line_num  is  79
+c is 110  n   line_num  is  79
+c is 41  )   line_num  is  79
+c is 123  {   line_num  is  79
+c is 105  i   line_num  is  80
+c is 99  c   line_num  is  80
+c is 59  ;   line_num  is  80
+c is 105  i   line_num  is  81
+c is 99  c   line_num  is  81
+c is 59  ;   line_num  is  81
+c is 105  i   line_num  is  82
+c is 97  a   line_num  is  82
+c is 59  ;   line_num  is  82
+c is 99  c   line_num  is  84
+c is 61  =   line_num  is  84
+c is 48  0   line_num  is  84
+c is 59  ;   line_num  is  84
+c is 99  c   line_num  is  85
+ast.stm.Assign@7bc899
+c is 61  =   line_num  is  85
+c is 48  0   line_num  is  85
+c is 59  ;   line_num  is  85
+c is 97  a   line_num  is  86
+ast.stm.Assign@aeea66
+c is 61  =   line_num  is  86
+c is 110  n   line_num  is  86
+c is 45  -   line_num  is  86
+c is 49  1   line_num  is  86
+c is 59  ;   line_num  is  86
+c is 119  w   line_num  is  87
+ast.stm.Assign@19eda2c
+c is 40  (   line_num  is  87
+c is 99  c   line_num  is  87
+c is 60  <   line_num  is  87
+c is 97  a   line_num  is  87
+c is 41  )   line_num  is  87
+c is 123  {   line_num  is  87
+c is 99  c   line_num  is  88
+c is 61  =   line_num  is  88
+c is 99  c   line_num  is  88
+c is 43  +   line_num  is  88
+c is 49  1   line_num  is  88
+c is 59  ;   line_num  is  88
+c is 99  c   line_num  is  89
+c is 61  =   line_num  is  89
+c is 99  c   line_num  is  89
+c is 43  +   line_num  is  89
+c is 50  2   line_num  is  89
+c is 59  ;   line_num  is  89
+c is 125  }   line_num  is  90
+ast.stm.While@59a34
+c is 114  r   line_num  is  91
+c is 99  c   line_num  is  91
+c is 59  ;   line_num  is  91
+c is 125  }   line_num  is  92
+c is 47  /   line_num  is  95
+c is 47  /   line_num  is  96
+c is 47  /   line_num  is  97
+c is 112  p   line_num  is  98
+c is 98  b   line_num  is  98
+c is 67  C   line_num  is  98
+c is 40  (   line_num  is  98
+c is 105  i   line_num  is  98
+c is 110  n   line_num  is  98
+c is 44  ,   line_num  is  98
+c is 105  i   line_num  is  98
+c is 110  n   line_num  is  98
+c is 41  )   line_num  is  98
+c is 123  {   line_num  is  98
+c is 98  b   line_num  is  99
+c is 114  r   line_num  is  99
+c is 59  ;   line_num  is  99
+c is 105  i   line_num  is  100
+c is 97  a   line_num  is  100
+c is 59  ;   line_num  is  100
+c is 114  r   line_num  is  102
+c is 61  =   line_num  is  102
+c is 102  f   line_num  is  102
+c is 59  ;   line_num  is  102
+c is 97  a   line_num  is  103
+ast.stm.Assign@1cef4f7
+c is 61  =   line_num  is  103
+c is 110  n   line_num  is  103
+c is 43  +   line_num  is  103
+c is 49  1   line_num  is  103
+c is 59  ;   line_num  is  103
+c is 105  i   line_num  is  104
+ast.stm.Assign@349471
+c is 40  (   line_num  is  104
+c is 110  n   line_num  is  104
+c is 60  <   line_num  is  104
+c is 110  n   line_num  is  104
+c is 41  )   line_num  is  104
+c is 114  r   line_num  is  104
+c is 61  =   line_num  is  104
+c is 102  f   line_num  is  104
+c is 59  ;   line_num  is  104
+c is 101  e   line_num  is  105
+c is 105  i   line_num  is  105
+c is 40  (   line_num  is  105
+c is 33  !   line_num  is  105
+c is 40  (   line_num  is  105
+c is 110  n   line_num  is  105
+c is 60  <   line_num  is  105
+c is 97  a   line_num  is  105
+c is 41  )   line_num  is  105
+c is 41  )   line_num  is  105
+c is 114  r   line_num  is  105
+c is 61  =   line_num  is  105
+c is 102  f   line_num  is  105
+c is 59  ;   line_num  is  105
+c is 101  e   line_num  is  106
+c is 114  r   line_num  is  106
+c is 61  =   line_num  is  106
+c is 116  t   line_num  is  106
+c is 59  ;   line_num  is  106
+c is 114  r   line_num  is  107
+ast.stm.If@1fdadcd
+c is 114  r   line_num  is  107
+c is 59  ;   line_num  is  107
+c is 125  }   line_num  is  108
+c is 47  /   line_num  is  110
+c is 112  p   line_num  is  111
+c is 105  i   line_num  is  111
+c is 80  P   line_num  is  111
+c is 40  (   line_num  is  111
+c is 41  )   line_num  is  111
+c is 123  {   line_num  is  111
+c is 105  i   line_num  is  112
+c is 106  j   line_num  is  112
+c is 59  ;   line_num  is  112
+c is 106  j   line_num  is  114
+c is 61  =   line_num  is  114
+c is 49  1   line_num  is  114
+c is 59  ;   line_num  is  114
+c is 119  w   line_num  is  115
+ast.stm.Assign@19d75ee
+c is 40  (   line_num  is  115
+c is 106  j   line_num  is  115
+c is 60  <   line_num  is  115
+c is 40  (   line_num  is  115
+c is 115  s   line_num  is  115
+c is 41  )   line_num  is  115
+c is 41  )   line_num  is  115
+c is 123  {   line_num  is  115
+c is 83  S   line_num  is  116
+c is 46  .   line_num  is  116
+c is 111  o   line_num  is  116
+c is 46  .   line_num  is  116
+c is 112  p   line_num  is  116
+c is 40  (   line_num  is  116
+c is 110  n   line_num  is  116
+c is 91  [   line_num  is  116
+c is 106  j   line_num  is  116
+c is 93  ]   line_num  is  116
+c is 41  )   line_num  is  116
+c is 59  ;   line_num  is  116
+c is 106  j   line_num  is  117
+c is 61  =   line_num  is  117
+c is 106  j   line_num  is  117
+c is 43  +   line_num  is  117
+c is 49  1   line_num  is  117
+c is 59  ;   line_num  is  117
+c is 125  }   line_num  is  118
+ast.stm.While@a98932
+c is 83  S   line_num  is  119
+c is 46  .   line_num  is  119
+c is 111  o   line_num  is  119
+c is 46  .   line_num  is  119
+c is 112  p   line_num  is  119
+c is 40  (   line_num  is  119
+c is 57  9   line_num  is  119
+c is 41  )   line_num  is  119
+c is 59  ;   line_num  is  119
+c is 114  r   line_num  is  120
+ast.stm.Print@6e4365
+c is 48  0   line_num  is  120
+c is 59  ;   line_num  is  120
+c is 125  }   line_num  is  121
+c is 47  /   line_num  is  124
+c is 112  p   line_num  is  125
+c is 105  i   line_num  is  125
+c is 73  I   line_num  is  125
+c is 40  (   line_num  is  125
+c is 105  i   line_num  is  125
+c is 115  s   line_num  is  125
+c is 41  )   line_num  is  125
+c is 123  {   line_num  is  125
+c is 105  i   line_num  is  126
+c is 106  j   line_num  is  126
+c is 59  ;   line_num  is  126
+c is 105  i   line_num  is  127
+c is 107  k   line_num  is  127
+c is 59  ;   line_num  is  127
+c is 105  i   line_num  is  128
+c is 97  a   line_num  is  128
+c is 59  ;   line_num  is  128
+c is 105  i   line_num  is  129
+c is 97  a   line_num  is  129
+c is 59  ;   line_num  is  129
+c is 115  s   line_num  is  131
+c is 61  =   line_num  is  131
+c is 115  s   line_num  is  131
+c is 59  ;   line_num  is  131
+c is 110  n   line_num  is  132
+ast.stm.Assign@10ab09f
+c is 61  =   line_num  is  132
+c is 110  n   line_num  is  132
+c is 105  i   line_num  is  132
+c is 91  [   line_num  is  132
+c is 115  s   line_num  is  132
+c is 93  ]   line_num  is  132
+c is 59  ;   line_num  is  132
+c is 106  j   line_num  is  134
+ast.stm.Assign@d1c778
+c is 61  =   line_num  is  134
+c is 49  1   line_num  is  134
+c is 59  ;   line_num  is  134
+c is 107  k   line_num  is  135
+ast.stm.Assign@7eb366
+c is 61  =   line_num  is  135
+c is 115  s   line_num  is  135
+c is 43  +   line_num  is  135
+c is 49  1   line_num  is  135
+c is 59  ;   line_num  is  135
+c is 119  w   line_num  is  136
+ast.stm.Assign@33f0de
+c is 40  (   line_num  is  136
+c is 106  j   line_num  is  136
+c is 60  <   line_num  is  136
+c is 40  (   line_num  is  136
+c is 115  s   line_num  is  136
+c is 41  )   line_num  is  136
+c is 41  )   line_num  is  136
+c is 123  {   line_num  is  136
+c is 97  a   line_num  is  137
+c is 61  =   line_num  is  137
+c is 50  2   line_num  is  137
+c is 42  *   line_num  is  137
+c is 106  j   line_num  is  137
+c is 59  ;   line_num  is  137
+c is 97  a   line_num  is  138
+c is 61  =   line_num  is  138
+c is 107  k   line_num  is  138
+c is 45  -   line_num  is  138
+c is 51  3   line_num  is  138
+c is 59  ;   line_num  is  138
+c is 110  n   line_num  is  139
+c is 91  [   line_num  is  139
+c is 106  j   line_num  is  139
+c is 93  ]   line_num  is  139
+c is 61  =   line_num  is  139
+c is 97  a   line_num  is  139
+c is 43  +   line_num  is  139
+c is 97  a   line_num  is  139
+c is 59  ;   line_num  is  139
+c is 106  j   line_num  is  140
+c is 61  =   line_num  is  140
+c is 106  j   line_num  is  140
+c is 43  +   line_num  is  140
+c is 49  1   line_num  is  140
+c is 59  ;   line_num  is  140
+c is 107  k   line_num  is  141
+c is 61  =   line_num  is  141
+c is 107  k   line_num  is  141
+c is 45  -   line_num  is  141
+c is 49  1   line_num  is  141
+c is 59  ;   line_num  is  141
+c is 125  }   line_num  is  142
+ast.stm.While@ab444
+c is 114  r   line_num  is  143
+c is 48  0   line_num  is  143
+c is 59  ;   line_num  is  143
+c is 125  }   line_num  is  144
+c is 125  }   line_num  is  146
+c is -1  ?   line_num  is  147
+class BinarySearch
+{
+  public static void main (String [] a)
+  {
+    System.out.println (new BS().Start(20));
+  }
+}
+
+class BS
+{
+  int[] number;
+  int size;
+  public int Start(int sz)
+  {
+    int aux01;
+    int aux02;
+
+    aux01 = this.Init(sz);
+    aux02 = this.Print();
+    System.out.println (1);
+    System.out.println (0);
+    if (this.Search(8))
+      System.out.println (1);
+
+    else
+      System.out.println (0);
+
+    System.out.println (1);
+    System.out.println (0);
+    if (this.Search(19))
+      System.out.println (1);
+
+    else
+      System.out.println (0);
+
+    System.out.println (1);
+    System.out.println (0);
+    if (this.Search(20))
+      System.out.println (1);
+
+    else
+      System.out.println (0);
+
+    System.out.println (1);
+    System.out.println (0);
+    if (this.Search(21))
+      System.out.println (1);
+
+    else
+      System.out.println (0);
+
+    System.out.println (1);
+    System.out.println (0);
+    if (this.Search(37))
+      System.out.println (1);
+
+    else
+      System.out.println (0);
+
+    System.out.println (1);
+    System.out.println (0);
+    if (this.Search(38))
+      System.out.println (1);
+
+    else
+      System.out.println (0);
+
+    System.out.println (1);
+    System.out.println (0);
+    if (this.Search(39))
+      System.out.println (1);
+
+    else
+      System.out.println (0);
+
+    System.out.println (1);
+    System.out.println (0);
+    if (this.Search(50))
+      System.out.println (1);
+
+    else
+      System.out.println (0);
+
+    return 999;
+  }
+  public boolean Search(int num)
+  {
+    boolean bs01;
+    int right;
+    int left;
+    boolean var_cont;
+    int medium;
+    int aux01;
+    int nt;
+
+    aux01 = 0;
+    bs01 = false;
+    right = number.length;
+    right = right - 1;
+    left = 0;
+    var_cont = true;
+    while(var_cont)
+    {
+      medium = left + right;
+      medium = this.Div(medium);
+      aux01 = number[medium];
+      if (num < aux01)
+        right = medium - 1;
+
+      else
+        left = medium + 1;
+
+      if (this.Compare(aux01, num))
+        var_cont = false;
+
+      else
+        var_cont = true;
+
+      if (right < left)
+        var_cont = false;
+
+      else
+        nt = 0;
+
+      count01 = count01 + 1;
+      count02 = count02 + 2;
+      System.out.println (number[j]);
+      j = j + 1;
+      aux01 = 2 * j;
+      aux02 = k - 3;
+      k = k - 1;
+    }
+    if (this.Compare(aux01, num))
+      bs01 = true;
+
+    else
+      bs01 = false;
+
+    return bs01;
+  }
+  public int Div(int num)
+  {
+    int count01;
+    int count02;
+    int aux03;
+
+    count01 = 0;
+    count02 = 0;
+    aux03 = num - 1;
+    while(count02 < aux03)
+    {
+      medium = left + right;
+      medium = this.Div(medium);
+      aux01 = number[medium];
+      if (num < aux01)
+        right = medium - 1;
+
+      else
+        left = medium + 1;
+
+      if (this.Compare(aux01, num))
+        var_cont = false;
+
+      else
+        var_cont = true;
+
+      if (right < left)
+        var_cont = false;
+
+      else
+        nt = 0;
+
+      count01 = count01 + 1;
+      count02 = count02 + 2;
+      System.out.println (number[j]);
+      j = j + 1;
+      aux01 = 2 * j;
+      aux02 = k - 3;
+      k = k - 1;
+    }
+    return count01;
+  }
+  public boolean Compare(int num1, int num2)
+  {
+    boolean retval;
+    int aux02;
+
+    retval = false;
+    aux02 = num2 + 1;
+    if (num1 < num2)
+      retval = false;
+
+    else
+      if (!(num1 < aux02))
+        retval = false;
+
+      else
+        retval = true;
+
+
+    return retval;
+  }
+  public int Print()
+  {
+    int j;
+
+    j = 1;
+    System.out.println (number[j]);
+    while(j < size)
+    {
+      medium = left + right;
+      medium = this.Div(medium);
+      aux01 = number[medium];
+      if (num < aux01)
+        right = medium - 1;
+
+      else
+        left = medium + 1;
+
+      if (this.Compare(aux01, num))
+        var_cont = false;
+
+      else
+        var_cont = true;
+
+      if (right < left)
+        var_cont = false;
+
+      else
+        nt = 0;
+
+      count01 = count01 + 1;
+      count02 = count02 + 2;
+      System.out.println (number[j]);
+      j = j + 1;
+      aux01 = 2 * j;
+      aux02 = k - 3;
+      k = k - 1;
+    }
+    System.out.println (99999);
+    System.out.println (99999);
+    return 0;
+  }
+  public int Init(int sz)
+  {
+    int j;
+    int k;
+    int aux02;
+    int aux01;
+
+    size = sz;
+    number = new int[sz];
+    j = 1;
+    k = size + 1;
+    while(j < size)
+    {
+      medium = left + right;
+      medium = this.Div(medium);
+      aux01 = number[medium];
+      if (num < aux01)
+        right = medium - 1;
+
+      else
+        left = medium + 1;
+
+      if (this.Compare(aux01, num))
+        var_cont = false;
+
+      else
+        var_cont = true;
+
+      if (right < left)
+        var_cont = false;
+
+      else
+        nt = 0;
+
+      count01 = count01 + 1;
+      count02 = count02 + 2;
+      System.out.println (number[j]);
+      j = j + 1;
+      aux01 = 2 * j;
+      aux02 = k - 3;
+      k = k - 1;
+    }
+    return 0;
+  }
+}
+
+
+

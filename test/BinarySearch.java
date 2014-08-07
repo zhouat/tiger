@@ -17,7 +17,8 @@ class BS{
 	int aux01 ;
 	int aux02 ;
 	aux01 = this.Init(sz);
-	aux02 = this.Print(1);
+	aux02 = this.Print();
+	
 	if (this.Search(8)) System.out.println(1) ;
 	else System.out.println(0) ;
 	if (this.Search(19)) System.out.println(1) ;

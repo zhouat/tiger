@@ -103,7 +103,6 @@ public class Parser
       return null;
     exp=parseExp();
     
-    System.out.println("parseExpList  "+exp);
     list.add(exp);
     while (current.kind == Kind.TOKEN_COMMER) {
       advance();
@@ -122,7 +121,6 @@ public class Parser
   // -> new id ()
   private ast.exp.T parseAtomExp()
   {
-	System.out.println("enter parseAtomExp...");  
 	ast.exp.T exp;
 	int num;
 	String lexmer=null;
@@ -136,7 +134,6 @@ public class Parser
     case TOKEN_NUM:
       num=Integer.parseInt(current.lexeme);
       advance();
-      System.out.println("can  a num here?   "+num);
       return new ast.exp.Num(num);
     case TOKEN_TRUE:
       advance();
@@ -183,7 +180,6 @@ public class Parser
   // -> AtomExp .length
   private ast.exp.T parseNotExp()
   {
-	System.out.println("enter parseNotExp...");  
 	ast.exp.T Atomexp=parseAtomExp(),exp=null;
 	String lexmer=null;
 	LinkedList<ast.exp.T> args=new LinkedList<ast.exp.T>();
@@ -201,7 +197,6 @@ public class Parser
         eatToken(Kind.TOKEN_LPAREN);
         args=parseExpList();
         eatToken(Kind.TOKEN_RPAREN);
-        System.out.println("sys   call\n"+Atomexp+"   "+lexmer+"   "+args.getFirst());
         return new ast.exp.Call(Atomexp, lexmer, args);
       } else {
 //    	  System.out.println("here?");
@@ -212,7 +207,6 @@ public class Parser
       }
     }
     
-   System.out.println("test   assign  is   \t"+Atomexp);
     return Atomexp;
   }
 
@@ -220,7 +214,6 @@ public class Parser
   // -> NotExp
   private ast.exp.T parseTimesExp()
   {
-	 System.out.println("enter parseTimesExp..."); 
 	int flag=0;  
 	ast.exp.T exp;  
     while (current.kind == Kind.TOKEN_NOT) {
@@ -235,7 +228,6 @@ public class Parser
     }
     else
     {
-    	System.out.println("  again test   assign  \t"+exp);
     	return exp;
     }
   }
@@ -244,7 +236,6 @@ public class Parser
   // -> TimesExp
   private ast.exp.T parseAddSubExp()
   {
-	System.out.println("enter parseAddSubExp..."); 
 	ast.exp.T left=null,right=null;  
 	
     left=parseTimesExp();
@@ -255,12 +246,10 @@ public class Parser
     }
     if(right!=null)
     {
-    	System.out.println("\n\n\n  left  si"+left+"\n\n\n"+right);
     	return new ast.exp.Times(left, right);
     }
     else 
     {
-    	System.out.println("parseAddSubExp   "+left);
     	return left;
     }
   }
@@ -270,7 +259,6 @@ public class Parser
   // -> AddSubExp
   private ast.exp.T parseLtExp()
   {
-	System.out.println("enter parsetLtExp...");
 	int kind=0;
 	ast.exp.T left=null,right=null;
     left=parseAddSubExp();
@@ -295,7 +283,6 @@ public class Parser
     	return new ast.exp.Sub(left, right);
     }else 
     {
-    	System.out.println("parseLtExp       "+left);
     	return left;
     }
   }
@@ -303,8 +290,7 @@ public class Parser
   // AndExp -> LtExp < LtExp
   // -> LtExp
   private ast.exp.T parseAndExp()
-  {
-	System.out.println("enter ParseAndExp...");  
+  { 
 	ast.exp.T left=null,right=null;  
     left=parseLtExp();
     while (current.kind == Kind.TOKEN_LT) {
@@ -316,7 +302,6 @@ public class Parser
     	return new ast.exp.Lt(left, right);
     }else
     {
-    	System.out.println("parseAndExp      "+left);
     	return left;
     }
   }
@@ -324,8 +309,7 @@ public class Parser
   // Exp -> AndExp && AndExp
   // -> AndExp
   private ast.exp.T parseExp()
-  {
-	System.out.println("beg of parse exping...");  
+  { 
 	ast.exp.T left=null,right=null;  
     left=parseAndExp();
     while (current.kind == Kind.TOKEN_AND) {
@@ -336,9 +320,7 @@ public class Parser
     {
     	return new ast.exp.And(left, right);
     }else 
-    {
-    	System.out.println("parseExp         "+left);
-    	
+    {   	
     	return left;
     }
   }
@@ -366,12 +348,11 @@ public class Parser
 
 	//parseVarDecls();
 
-	  System.out.println("\tbeg   of  stm()      "+current.kind);
 	  
 	if(current.kind==Kind.TOKEN_LBRACE)
 	{
 		eatToken(Kind.TOKEN_LBRACE);
-		parseStatement();
+		//parseStatement();
 //		eatToken(Kind.TOKEN_RBRACE);
 	}
 	
@@ -382,15 +363,10 @@ public class Parser
 		eatToken(Kind.TOKEN_IF);
 		eatToken(Kind.TOKEN_LPAREN);
 		ast.exp.T exp=parseExp();
-		System.out.println("con exp                       "+exp);
-		eatToken(Kind.TOKEN_RPAREN);
-		System.out.println("			__if__then__branch");		
+		eatToken(Kind.TOKEN_RPAREN);	
 		ast.stm.T stm1=parseStatement();
-		System.out.println("			__if__else__branch");	
 		eatToken(Kind.TOKEN_ELSE);
 		ast.stm.T stm2=parseStatement();
-		
-		System.out.println("condition       "+exp+"\nstm1       "+stm1+"\nstm2          "+stm2);
 		return new ast.stm.If(exp, stm1, stm2);
 	}
 	
@@ -403,6 +379,7 @@ public class Parser
 
 		if(current.kind==Kind.TOKEN_LBRACE)/* while block problems  */
 			eatToken(Kind.TOKEN_LBRACE);
+		stms=new LinkedList<ast.stm.T>();
 		
 		while(current.kind!=Kind.TOKEN_RBRACE)
 		{
@@ -433,8 +410,7 @@ public class Parser
 		if(exp!=null){
 			
 			mainstm=new ast.stm.Print(exp);
-			list.add(new ast.stm.Print(exp));
-			System.out.println(mainstm+"\n\n\n\n"+list.getFirst()+"\n love u");
+			//list.add(new ast.stm.Print(exp));
 		}
 		else{ 
 			System.out.println("exp is null");
@@ -450,9 +426,7 @@ public class Parser
 	
 	String id=current.lexeme;
 	if(current.kind==Kind.TOKEN_ID)
-	{
-		System.out.println("__zat log__here__"+current.lexeme+current.lineNum);
-		
+	{		
 		eatToken(Kind.TOKEN_ID);
 		
 		if(current.kind==Kind.TOKEN_ASSIGN)
@@ -464,7 +438,6 @@ public class Parser
 			eatToken(Kind.TOKEN_SEMI);
 			//parseStatement();
 			
-			System.out.println("id           is     "+id+"\texp1          is "+exp);
 			return new ast.stm.Assign(id, exp);
 		}
 		// Statement -> { Statement* }
@@ -483,8 +456,7 @@ public class Parser
 			exp2=parseExp();
 			eatToken(Kind.TOKEN_SEMI);
 			
-			parseStatement();
-			System.out.println("exp1          is "+exp1+"exp2            is"+exp2);
+			//parseStatement();
 			return new ast.stm.AssignArray(id, exp1, exp2);
 		}
 	}
@@ -496,27 +468,29 @@ public class Parser
 
   // Statements -> Statement Statements
   // ->
+  LinkedList<ast.stm.T> liststms=new LinkedList<ast.stm.T>();
   private LinkedList<ast.stm.T> parseStatements()
   {
 	  
-  	list=new LinkedList<ast.stm.T>();
+	liststms=new LinkedList<ast.stm.T>();
+  	ast.stm.T st;
 //	System.out.println("before    ?"+list.getFirst());
     while (current.kind == Kind.TOKEN_LBRACE || current.kind == Kind.TOKEN_IF
         || current.kind == Kind.TOKEN_WHILE
         || current.kind == Kind.TOKEN_SYSTEM || current.kind == Kind.TOKEN_ID) {
     	
-    	System.out.println("\tenter stm    "+current.kind);
-
-    	list.add(parseStatement());
-    	if(Kind.TOKEN_RBRACE==current.kind)
+    	
+    	liststms.add(st=parseStatement());
+    	
+    	System.out.println(st);
+    	while(Kind.TOKEN_RBRACE==current.kind)
     	{
     		eatToken(Kind.TOKEN_RBRACE);
     	}
 
     }
     
-    System.out.println("after     ?"+list.getFirst());
-    return list;
+    return liststms;
   }
 
   // Type -> int []
@@ -568,8 +542,6 @@ public class Parser
   // VarDecl -> Type id ;
   private ast.dec.T parseVarDecl()
   {
-	  
-	System.out.println("enter parseVarDecl()...");  
 	String lexmer=null;
 
     // to parse the "Type" nonterminal in this method, instead of writing
@@ -577,12 +549,10 @@ public class Parser
     type=parseType();
     if(current.kind==Kind.TOKEN_ASSIGN)
     {
-    	System.out.println("enter Kind.TOKEN_ASSIGN branch...");
     	eatToken(Kind.TOKEN_ASSIGN);
     	exp=parseExp();
 //    	System.out.println("__here?__");
     	eatToken(Kind.TOKEN_SEMI,"466 assign value dec");
-    	System.out.println("assign value dec      "+type+" \t\t "+exp);
     	return null;
     }
     lexmer=current.lexeme;
@@ -596,7 +566,8 @@ public class Parser
   private LinkedList<ast.dec.T> parseVarDecls()
   {
 	LinkedList<ast.dec.T> list=new LinkedList<ast.dec.T>();
-    while (current.kind == Kind.TOKEN_INT || current.kind == Kind.TOKEN_BOOLEAN) 
+    while (current.kind == Kind.TOKEN_INT || current.kind == Kind.TOKEN_BOOLEAN
+    	) 
     {
 
     	list.add(parseVarDecl());
@@ -709,11 +680,10 @@ public class Parser
 	eatToken(Kind.TOKEN_RPAREN);
 	eatToken(Kind.TOKEN_LBRACE);
 	
-	System.out.println("\n***********************************\n");
+	//System.out.println("___end__?");
 	locals=parseVarDecls();
-	
-	System.out.println("\n===================================\n");
-//	System.out.println("___end__?");
+
+		
 	//public static int main(String[] args)
 	/* {
 	 * 
@@ -730,10 +700,9 @@ public class Parser
 		retExp=parseExp();
 		eatToken(Kind.TOKEN_SEMI);
 	}
-	System.out.println("ret type                 is:"+retExp);
-	eatToken(Kind.TOKEN_RBRACE);
+	
+	//eatToken(Kind.TOKEN_RBRACE);
 	//mainstm=stms.getFirst();
-	System.out.println(mainstm+"   \n\n");
     return new ast.method.Method(retType, lexmer, formals, locals, stmsmethod, retExp);
   }
 
@@ -746,6 +715,9 @@ public class Parser
 	
     while (current.kind == Kind.TOKEN_PUBLIC) {
     	listmethod.add(parseMethod());
+    	
+    	while(current.kind==Kind.TOKEN_RBRACE)
+    		eatToken(Kind.TOKEN_RBRACE);
     	//parseMethod();
     }
     return listmethod;
@@ -770,7 +742,7 @@ public class Parser
     classdecs=parseVarDecls();
     /* hand all of the methods in the source file */
     classmethods=parseMethodDecls();
-    eatToken(Kind.TOKEN_RBRACE);
+   // eatToken(Kind.TOKEN_RBRACE);
     return new ast.classs.Class(classid, classextends, classdecs, classmethods);
   }
 

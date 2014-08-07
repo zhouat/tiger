@@ -74,9 +74,12 @@ public class PrettyPrintVisitor implements Visitor
     e.exp.accept(this);
     this.say("." + e.id + "(");
     int num=0;
+    if(e.args!=null)
     for (ast.exp.T x : e.args) {
       num++;
-      if(num>1)    this.say(", ");
+      
+      if(num>1)    
+    	  this.say(", ");
       x.accept(this);
     }
     this.say(")");
@@ -182,9 +185,19 @@ public class PrettyPrintVisitor implements Visitor
     return;
   }
 
+  // number[j] = aux01 + aux02 ;
   @Override
   public void visit(ast.stm.AssignArray s)
   {
+	 this.printSpaces();
+	 this.indent();
+	 this.say(s.id);
+	 this.say("[");	 
+	 s.index.accept(this); 
+	 this.say("]=");	 
+	 s.exp.accept(this);
+	 this.say(";\n");
+	 this.unIndent();
   }
 
   @Override
