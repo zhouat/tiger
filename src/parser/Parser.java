@@ -11,6 +11,7 @@ public class Parser
 {
 	Lexer 		lexer;
 	Token 		current;
+	Token       pretoken=null,nextoken=null;
 	String 		fname;
 
 	/*  elements for mainclass  */
@@ -339,7 +340,9 @@ public class Parser
 
   LinkedList<ast.stm.T> list=null;
   	
-  LinkedList<ast.stm.T> stms=new LinkedList<ast.stm.T>();	
+  LinkedList<ast.stm.T> stms=new LinkedList<ast.stm.T>();
+  LinkedList<ast.stm.T> stml=null;
+  LinkedList<ast.stm.T> stmr=null;
   private ast.stm.T parseStatement()
   {
     // Lab1. Exercise 4: Fill in the missing code
@@ -363,11 +366,54 @@ public class Parser
 		eatToken(Kind.TOKEN_IF);
 		eatToken(Kind.TOKEN_LPAREN);
 		ast.exp.T exp=parseExp();
-		eatToken(Kind.TOKEN_RPAREN);	
-		ast.stm.T stm1=parseStatement();
+		eatToken(Kind.TOKEN_RPAREN);
+		
+		ast.stm.T stm1=null,stm2=null;
+		if(current.kind==Kind.TOKEN_LBRACE)
+		{
+			eatToken(Kind.TOKEN_LBRACE);
+			stml=new LinkedList<ast.stm.T>();
+			
+			while(current.kind!=Kind.TOKEN_RBRACE)
+			{
+				stml.add(parseStatement());
+			}
+			
+		}else
+			stm1=parseStatement();
+		
+		while(current.kind==Kind.TOKEN_RBRACE)
+			eatToken(Kind.TOKEN_RBRACE);
+		
 		eatToken(Kind.TOKEN_ELSE);
-		ast.stm.T stm2=parseStatement();
-		return new ast.stm.If(exp, stm1, stm2);
+		
+		if(current.kind==Kind.TOKEN_LBRACE)
+		{
+			eatToken(Kind.TOKEN_LBRACE);
+			stmr=new LinkedList<ast.stm.T>();
+			
+			while(current.kind!=Kind.TOKEN_RBRACE)
+			{
+				stmr.add(parseStatement());
+			}
+			
+		}else
+			stm2=parseStatement();
+		
+		if(stm1!=null&stm2!=null)
+			return new ast.stm.If(exp, stm1, stm2);
+		else if(stm1!=null&stm2==null)
+		{
+			return new ast.stm.If(exp, stm1, new ast.stm.Block(stmr));
+		}else if(stm1==null&stm2!=null)
+		{
+			return new ast.stm.If(exp, new ast.stm.Block(stml), stm2);
+		}else if(stm1==null&stm2==null)
+		{
+			return new ast.stm.If(exp, new ast.stm.Block(stml), new ast.stm.Block(stmr));
+		}
+		
+		
 	}
 	
 	if(current.kind==Kind.TOKEN_WHILE)
@@ -379,13 +425,26 @@ public class Parser
 
 		if(current.kind==Kind.TOKEN_LBRACE)/* while block problems  */
 			eatToken(Kind.TOKEN_LBRACE);
-		stms=new LinkedList<ast.stm.T>();
+
+		stms=null;
+		ast.stm.T stml=null;
 		
-		while(current.kind!=Kind.TOKEN_RBRACE)
+		if(current.kind==Kind.TOKEN_LBRACE)
 		{
-			stms.add(parseStatement());
-		}
-		return new ast.stm.While(exp, new ast.stm.Block(stms));
+			eatToken(Kind.TOKEN_LBRACE);
+			
+			stms=new LinkedList<ast.stm.T>();
+			while(current.kind!=Kind.TOKEN_RBRACE)
+			{
+				stms.add(parseStatement());
+			}
+		}else
+			stml=parseStatement();
+		
+		if(stml==null)
+			return new ast.stm.While(exp, new ast.stm.Block(stms));
+		else
+			return new ast.stm.While(exp, stml);	
 	}
 	  // Statement -> { Statement* }
 	  // -> if ( Exp ) Statement else Statement
@@ -427,7 +486,13 @@ public class Parser
 	String id=current.lexeme;
 	if(current.kind==Kind.TOKEN_ID)
 	{		
-		eatToken(Kind.TOKEN_ID);
+		//eatToken(Kind.TOKEN_ID);
+		if(nextoken!=null)
+		{
+			current=nextoken;
+			nextoken=null;
+		}else
+			eatToken(Kind.TOKEN_ID);
 		
 		if(current.kind==Kind.TOKEN_ASSIGN)
 		{
@@ -522,7 +587,15 @@ public class Parser
 	}else if(current.kind==Kind.TOKEN_ID)
 	{
 		String lexmer=current.lexeme;
-		eatToken(Kind.TOKEN_ID);
+		//eatToken(Kind.TOKEN_ID); 
+		if(nextoken==null)
+		{
+			eatToken(Kind.TOKEN_ID); 
+		}else
+		{
+			current=nextoken;
+		}
+		
 		if(current.kind==Kind.TOKEN_LBRACK)
 		{
 			eatToken(Kind.TOKEN_LBRACK);
@@ -557,6 +630,7 @@ public class Parser
     }
     lexmer=current.lexeme;
     eatToken(Kind.TOKEN_ID,"here error?  412");
+    
     eatToken(Kind.TOKEN_SEMI);
     return new ast.dec.Dec(type, lexmer);
   }
@@ -567,10 +641,30 @@ public class Parser
   {
 	LinkedList<ast.dec.T> list=new LinkedList<ast.dec.T>();
     while (current.kind == Kind.TOKEN_INT || current.kind == Kind.TOKEN_BOOLEAN
-    	) 
+    	 ||current.kind == Kind.TOKEN_ID) 
     {
-
-    	list.add(parseVarDecl());
+    	//aux01   =    this.Init(sz);
+    	//Tree    root ;
+    	if(current.kind==Kind.TOKEN_ID)
+    	{
+    		pretoken=current;   		
+    		eatToken(Kind.TOKEN_ID);
+    		
+			nextoken=current;
+			
+    		if(current.kind==Kind.TOKEN_ASSIGN)
+    		{
+    			current=pretoken;
+    			return list;
+    		}
+    		else
+    		{
+    			current=pretoken;
+    			list.add(parseVarDecl());
+    		}
+    	}
+    	else   	
+    		list.add(parseVarDecl());
 //    	parseVarDecl();
     }
     return list;
@@ -681,18 +775,16 @@ public class Parser
 	eatToken(Kind.TOKEN_LBRACE);
 	
 	//System.out.println("___end__?");
+	//Tree   root  ;
+	//root   =     new Tree();
+	
+	
+	
 	locals=parseVarDecls();
-
-		
-	//public static int main(String[] args)
-	/* {
-	 * 
-	 * 		Statements;
-	 * 
-	 * 
-	 * }
-	 */ 
 	stmsmethod=parseStatements();
+
+	
+	
 	
 	if(current.kind==Kind.TOKEN_RETURN)
 	{

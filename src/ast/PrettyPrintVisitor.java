@@ -283,6 +283,7 @@ public class PrettyPrintVisitor implements Visitor
   @Override
   public void visit(ast.dec.Dec d)
   {
+	 d.type.accept(this);
   }
 
   // method
