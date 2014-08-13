@@ -34,7 +34,8 @@ public class Fac
       )
   );
 
-  // // class "Fac"
+  // // class "Fac" 
+  //id, extendss, decs, methods
   static ast.classs.Class fac = new ast.classs.Class
   (
 	  "Fac", 

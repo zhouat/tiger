@@ -2,5 +2,6 @@
 /ast/
 /control/
 /elaborator/
-/parser/
 /lexer/
+/parser/
+/util/

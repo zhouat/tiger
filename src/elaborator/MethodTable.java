@@ -43,7 +43,8 @@ public class MethodTable
 
   public void dump()
   {
-    new Todo();
+   // new Todo();
+	 System.out.println(table);
   }
 
   @Override

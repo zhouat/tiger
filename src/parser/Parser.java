@@ -547,7 +547,7 @@ public class Parser
     	
     	liststms.add(st=parseStatement());
     	
-    	System.out.println(st);
+//    	System.out.println(st);
     	while(Kind.TOKEN_RBRACE==current.kind)
     	{
     		eatToken(Kind.TOKEN_RBRACE);
@@ -594,6 +594,7 @@ public class Parser
 		}else
 		{
 			current=nextoken;
+			nextoken=null;
 		}
 		
 		if(current.kind==Kind.TOKEN_LBRACK)
@@ -734,7 +735,8 @@ public class Parser
 		lexmer=current.lexeme;
 		eatToken(Kind.TOKEN_ID);
 	}else error();
-		
+	
+	
 	eatToken(Kind.TOKEN_LPAREN);
 	if(1==ismain)
 	{

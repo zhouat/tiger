@@ -4,7 +4,8 @@ class Sum {
     }
 }
 
-class Doit {
+class Doit extends Sum{
+	int j;
     public int doit(int n) {
         int sum;
         int i;

@@ -12,6 +12,7 @@ public class ClassTable
     this.table = new java.util.Hashtable<String, ClassBinding>();
   }
 
+  
   // Duplication is not allowed
   public void put(String c, ClassBinding cb)
   {
@@ -35,7 +36,7 @@ public class ClassTable
   // Duplication is not allowed.
   // Also note that MiniJava does NOT allow overloading.
   public void put(String c, String id, MethodType type)
-  {
+  { 	
     ClassBinding cb = this.table.get(c);
     cb.put(id, type);
     return;
@@ -47,6 +48,10 @@ public class ClassTable
     return this.table.get(className);
   }
 
+  public java.util.Hashtable getTable()
+  {
+	  return table;
+  }
   // get type of some field
   // return null for non-existing field.
   public ast.type.T get(String className, String xid)
@@ -81,7 +86,9 @@ public class ClassTable
 
   public void dump()
   {
-    new Todo();
+   // new Todo();
+	 System.out.println(table);
+	  
   }
 
   @Override

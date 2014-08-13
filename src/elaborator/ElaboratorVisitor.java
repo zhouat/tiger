@@ -24,18 +24,41 @@ public class ElaboratorVisitor implements ast.Visitor
   // /////////////////////////////////////////////////////
   // expressions
   @Override
+ 
   public void visit(ast.exp.Add e)
   {
+	e.left.accept(this);
+	ast.type.T ty=this.type;
+	e.right.accept(this);
+	if(!this.type.toString().equals(ty.toString()))
+		error();
+	 this.type= new ast.type.Int();
+	 return;
   }
 
   @Override
   public void visit(ast.exp.And e)
   {
+	  e.left.accept(this);
+	  ast.type.T ty=this.type;
+	  e.right.accept(this);
+	  if(!this.type.toString().equals(ty.toString()))
+		  error();
+	  this.type= new ast.type.Boolean();
+	  return;
   }
 
   @Override
   public void visit(ast.exp.ArraySelect e)
   {
+	  e.array.accept(this);
+	  ast.type.T ty=this.type;
+	  e.index.accept(this);
+	  if(!this.type.toString().equals((new ast.type.Int()).toString()))
+		  error();
+	  
+	  this.type= ty;
+	  return;
   }
 
   @Override
@@ -53,6 +76,8 @@ public class ElaboratorVisitor implements ast.Visitor
       error();
     MethodType mty = this.classTable.getm(ty.id, e.id);
     java.util.LinkedList<ast.type.T> argsty = new java.util.LinkedList<ast.type.T>();
+
+    if(e.args!=null)
     for (ast.exp.T a : e.args) {
       a.accept(this);
       argsty.addLast(this.type);
@@ -75,6 +100,8 @@ public class ElaboratorVisitor implements ast.Visitor
   @Override
   public void visit(ast.exp.False e)
   {
+	  this.type= new ast.type.Boolean();
+	  return;
   }
 
   @Override
@@ -100,6 +127,11 @@ public class ElaboratorVisitor implements ast.Visitor
   @Override
   public void visit(ast.exp.Length e)
   {
+	  e.array.accept(this);
+	  ast.type.T ty=this.type;
+	  
+	  this.type= new ast.type.Int();
+	  return;
   }
 
   @Override
@@ -117,6 +149,9 @@ public class ElaboratorVisitor implements ast.Visitor
   @Override
   public void visit(ast.exp.NewIntArray e)
   {
+	  this.type=new ast.type.Int();
+	  return;
+	  
   }
 
   @Override
@@ -129,6 +164,8 @@ public class ElaboratorVisitor implements ast.Visitor
   @Override
   public void visit(ast.exp.Not e)
   {
+	 this.type =new ast.type.Boolean();
+	 return;
   }
 
   @Override
@@ -172,6 +209,8 @@ public class ElaboratorVisitor implements ast.Visitor
   @Override
   public void visit(ast.exp.True e)
   {
+	  this.type =new ast.type.Boolean(); 
+	  return;
   }
 
   // statements
@@ -194,6 +233,7 @@ public class ElaboratorVisitor implements ast.Visitor
   @Override
   public void visit(ast.stm.AssignArray s)
   {
+	  
   }
 
   @Override
@@ -235,12 +275,14 @@ public class ElaboratorVisitor implements ast.Visitor
   @Override
   public void visit(ast.type.Class t)
   {
+	
   }
+  
 
   @Override
   public void visit(ast.type.Int t)
   {
-    System.out.println("aaaa");
+	  
   }
 
   @Override
@@ -252,6 +294,7 @@ public class ElaboratorVisitor implements ast.Visitor
   @Override
   public void visit(ast.dec.Dec d)
   {
+	  
   }
 
   // method
@@ -300,6 +343,7 @@ public class ElaboratorVisitor implements ast.Visitor
   private void buildMainClass(ast.mainClass.MainClass main)
   {
     this.classTable.put(main.id, new ClassBinding(null));
+    
   }
 
   // class table for normal classes
@@ -310,7 +354,10 @@ public class ElaboratorVisitor implements ast.Visitor
       ast.dec.Dec d = (ast.dec.Dec) dec;
       this.classTable.put(c.id, d.id, d.type);
     }
-    for (ast.method.T method : c.methods) {
+    
+    for (ast.method.T method : c.methods) 
+    {    	
+//      this.classTable.getTable().clear();	
       ast.method.Method m = (ast.method.Method) method;
       this.classTable.put(c.id, m.id, new MethodType(m.retType, m.formals));
     }
