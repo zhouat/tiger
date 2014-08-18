@@ -10,7 +10,8 @@ public class Method extends T
   public java.util.LinkedList<ast.dec.T> locals;
   public java.util.LinkedList<ast.stm.T> stms;
   public ast.exp.T retExp;
-
+  
+  
   public Method(ast.type.T retType, String id,
       java.util.LinkedList<ast.dec.T> formals,
       java.util.LinkedList<ast.dec.T> locals,

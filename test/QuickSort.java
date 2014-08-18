@@ -38,34 +38,36 @@ class QS{
 	boolean cont02;
 	int aux03 ;
 	t = 0 ;
-	if (left < right){
+	if (left < right)
+	{
 	    v = number[right] ;
 	    i = left - 1 ;
 	    j = right ;
 	    cont01 = true ;
-	    while (cont01){
-		cont02 = true ;
-		while (cont02){
-		    i = i + 1 ;
-		    aux03 = number[i] ;
-		    if (!(aux03<v)) cont02 = false ;
-		    else cont02 = true ;
-		}
-		cont02 = true ;
-		while (cont02){
-		    j = j - 1 ;
-		    aux03 = number[j] ;
-		    if (!(v < aux03)) cont02 = false ;
-		    else cont02 = true ;
-		}
-
-
-		t = number[i] ;
-		number[i] = number[j] ;
-		number[j] = t ;
-		//aux03 = i + 1 ;
-		if ( j < (i+1)) cont01 = false ;
-		else cont01 = true ;
+	    while (cont01)
+	    {
+			cont02 = true ;
+			while (cont02)
+			{
+			    i = i + 1 ;
+			    aux03 = number[i] ;
+			    if (!(aux03<v)) cont02 = false ;
+			    else cont02 = true ;
+			}
+			cont02 = true ;
+			while (cont02)
+			{
+			    j = j - 1 ;
+			    aux03 = number[j] ;
+			    if (!(v < aux03)) cont02 = false ;
+			    else cont02 = true ;
+			}
+			t = number[i] ;
+			number[i] = number[j] ;
+			number[j] = t ;
+			//aux03 = i + 1 ;
+			if ( j < (i+1)) cont01 = false ;
+			else cont01 = true ;
 	    }
 	    number[j] = number[i] ;
 	    number[i] = number[right] ;

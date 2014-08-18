@@ -171,7 +171,7 @@ public class PrettyPrintVisitor implements Visitor
   @Override
   public void visit(ast.exp.True e)
   {
-	  
+	  this.say("true");
   }
 
   // statements
@@ -265,6 +265,7 @@ public class PrettyPrintVisitor implements Visitor
   @Override
   public void visit(ast.type.Class t)
   {
+	  this.say(t.id);
   }
 
   @Override

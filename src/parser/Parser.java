@@ -343,6 +343,8 @@ public class Parser
   LinkedList<ast.stm.T> stms=new LinkedList<ast.stm.T>();
   LinkedList<ast.stm.T> stml=null;
   LinkedList<ast.stm.T> stmr=null;
+  int num_lbrace=0;
+  
   private ast.stm.T parseStatement()
   {
     // Lab1. Exercise 4: Fill in the missing code
@@ -355,6 +357,7 @@ public class Parser
 	if(current.kind==Kind.TOKEN_LBRACE)
 	{
 		eatToken(Kind.TOKEN_LBRACE);
+		num_lbrace++;
 		//parseStatement();
 //		eatToken(Kind.TOKEN_RBRACE);
 	}
@@ -375,6 +378,7 @@ public class Parser
 			stml=new LinkedList<ast.stm.T>();
 			
 			while(current.kind!=Kind.TOKEN_RBRACE)
+			//while(num_lbrace!=0)
 			{
 				stml.add(parseStatement());
 			}
@@ -544,12 +548,13 @@ public class Parser
         || current.kind == Kind.TOKEN_WHILE
         || current.kind == Kind.TOKEN_SYSTEM || current.kind == Kind.TOKEN_ID) {
     	
-    	
+    	num_lbrace=0;
     	liststms.add(st=parseStatement());
     	
 //    	System.out.println(st);
     	while(Kind.TOKEN_RBRACE==current.kind)
     	{
+    		num_lbrace--;
     		eatToken(Kind.TOKEN_RBRACE);
     	}
 

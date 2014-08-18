@@ -1,7 +1,2 @@
-/Tiger.class
-/ast/
-/control/
 /elaborator/
-/lexer/
-/parser/
-/util/
+/ast/

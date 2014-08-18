@@ -47,7 +47,8 @@ public class Lexer
 		  put(Kind.TOKEN_THEN,"then");
 		  put(Kind.TOKEN_THIS,"this");
 		  put(Kind.TOKEN_VOID,"void");
-		  put(Kind.TOKEN_WHILE,"while");		  
+		  put(Kind.TOKEN_WHILE,"while");
+		  put(Kind.TOKEN_TRUE,"true");
 	  }
   };
 

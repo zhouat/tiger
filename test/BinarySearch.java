@@ -1,5 +1,7 @@
 class BinarySearch{
     public static void main(String[] a){
+    int i;
+    int[] number ;
 	System.out.println(new BS().Start(20));
     }
 }
